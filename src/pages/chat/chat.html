@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar class="navbar">
+        <ion-grid>
+            <ion-row>
+              <ion-col col-10>
+                  <p class="subheader">Your virtual accountant</p>
+                  <h2 class="header">Here to help you</h2>
+              </ion-col>
+              <ion-col col-2 class="profile"><ion-icon name="person"></ion-icon></ion-col>
+            </ion-row>
+          </ion-grid>
+    </ion-navbar>
+</ion-header>
+  
+<ion-content>
+  
+    <ion-row justify-content-center>
+        <ion-buttons text-center>
+            <button ion-button round class="tag">Today</button>
+        </ion-buttons>
+   </ion-row>
+   <div class="conversation"> 
+    <div *ngFor="let message of messages" class="message" 
+         [class.left]=" message.userId === toUser.id"
+         [class.right]=" message.userId === user.id "> 
+         <img *ngIf="message.userId === toUser.id" class="avatar" [src]="message.userAvatar" alt="" src="">
+         <ion-spinner name="dots" *ngIf="message.status === 'pending'"></ion-spinner>
+         <div class="details">
+            <div class="content">
+              <p class="line-breaker ">{{message.message}}</p>
+            </div>
+         </div>
+    </div>
+   </div>
+</ion-content>
+
+ <ion-footer no-border class="input-container" [style.height]="'55px'">
+  <div class="input">
+    <button ion-button clear icon-only item-right>
+      <ion-icon name="md-happy"></ion-icon>
+    </button>
+    <ion-textarea #user_input
+              placeholder="Press here to talk to Fitsy"
+              [(ngModel)]="editorMessage"
+              (keyup.enter)="sendMessage()"
+              (focusin)="onFocus()">
+    </ion-textarea>
+    <button ion-button clear icon-only item-right (click)="sendMessage()">
+      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+    </button>
+  </div>
+ </ion-footer>
+
+

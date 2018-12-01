@@ -1,0 +1,185 @@
+page-chat {
+
+  $userBackgroundColor: #387ef5;
+  $toUserBackgroundColor: #fff;
+   
+
+    // HEADER //
+    ion-navbar {
+      border-radius: 0px 0px 15px 15px;
+    }
+    .toolbar-background {
+      background-color: #F0F4F9;
+    }
+   
+    .header-ios .toolbar-background-ios {
+       border-style: solid;
+       border-color: #ECF0F6;
+    }
+  
+    .subheader{ 
+      padding: 0;
+      margin:0 ;
+      color: #95A1B4;
+  
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 80%;
+      font-weight: 700;
+    }
+  
+    .header{
+      margin: 0;
+      padding: 0;
+      color: #000000;
+  
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+    }
+
+    .toolbar-content{
+      padding: 5px;
+    }
+  
+    .profile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      ion-icon {
+        display: inline-block;
+        font-size: 2.4em;
+      }
+  
+    }
+    // HEADER //
+
+  
+    // CONTENT //
+
+    .tag {
+      color: #5F6FEE;
+      background-color: #D3D8FF;
+      margin: 30px 0 15px 0;
+
+      font-size: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+      
+    }
+  
+    .conversation {
+
+      padding: 0 10px;
+
+      .message {
+        position: relative;
+        padding: 5px 0;
+
+
+        .avatar {
+          position: absolute;
+          border-radius: 40px;
+          width: 40px;
+          height: 40px;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+          left: 0;
+        }
+
+        .details {
+          width: 100%;
+          display: inline-block;
+          p {
+            margin: 0;
+            padding: 0;
+          }
+          .content {
+            position: relative;
+            margin-top: 5px;
+            padding: 10px;
+            color: #fff;
+            width: auto;
+            max-width: 80%;
+          }
+
+        }
+      }
+
+      .message.left {
+
+        .content {
+          background-color: $toUserBackgroundColor;
+          float: left;
+        }
+        .details {
+          padding-left: 60px;
+        }
+
+        .content {
+          color: #535B6B;
+          border-radius: 2px 15px 15px 15px;
+          box-shadow: 0 2px 10px rgba(40, 78, 115, 0.20);
+        }
+
+        ion-spinner {
+          position: absolute;
+          right: 10px;
+          top: 50px;
+        }
+
+      }
+
+      .message.right {
+        
+        .content {
+
+          float: right;
+          border-radius: 15px 2px 15px 15px;
+          box-shadow: 0 2px 10px rgba(40, 78, 115, 0.20);
+          background-color: #5F6FEE ;
+          
+        }
+
+      }
+
+    }
+
+    .line-breaker {
+      white-space: pre-line;
+    }
+    // CONTENT //
+  
+
+    // FOOTER //
+  
+    ion-footer {
+      border-top: 2px #ECF0F6;
+      background-color: #F0F4F9;;
+      border-radius: 15px 15px 0px 0px;
+      height: 255px;
+      
+
+      .input {
+        padding: 5px;
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+
+        ion-textarea {
+          flex: 1;
+          border: 0;
+          background-color: #F0F4F9;;
+
+        }
+    }
+
+    }
+
+   
+
+    // FOOTER //
+  
+
+
+
+  
+
+}
