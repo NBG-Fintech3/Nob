@@ -1,0 +1,2748 @@
+{
+    "SandboxID": "Nob",
+    "Users": [
+        {
+            "UserPermissions": [
+                {
+                    "AccountID": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                    "ViewID": "owner"
+                },
+                {
+                    "AccountID": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                    "ViewID": "publicViewUser1"
+                },
+                {
+                    "AccountID": "57b27902-41ab-43bb-aba2-115ca3a6b45d",
+                    "ViewID": "owner"
+                },
+                {
+                    "AccountID": "57b27902-41ab-43bb-aba2-115ca3a6b45d",
+                    "ViewID": "publicViewUser3"
+                },
+                {
+                    "AccountID": "6ee81f5a-121a-4578-9f07-34c93d930fb5",
+                    "ViewID": "owner"
+                },
+                {
+                    "AccountID": "f2188a65-384a-40e2-bacd-47e6b1586cd6",
+                    "ViewID": "owner"
+                }
+            ],
+            "user_id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+            "email": "user1@nbg.gr",
+            "provider_id": "NBG.gr",
+            "provider": "NBG",
+            "username": "User1",
+            "entitlements": {
+                "list": []
+            },
+            "createdByUserID": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+            "application_id": null
+        },
+        {
+            "UserPermissions": [
+                {
+                    "AccountID": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                    "ViewID": "owner"
+                },
+                {
+                    "AccountID": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                    "ViewID": "publicViewUser2"
+                }
+            ],
+            "user_id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+            "email": "user2@nbg.gr",
+            "provider_id": "NBG.gr",
+            "provider": "NBG",
+            "username": "User2",
+            "entitlements": {
+                "list": []
+            },
+            "createdByUserID": "0afa3358-3ae5-4f7e-984f-d930dd659c1d",
+            "application_id": "app2Id"
+        },
+        {
+            "UserPermissions": [],
+            "user_id": "c2176132-cbae-43ac-bd3c-3bd14f3a8e5d",
+            "email": "user3@nbg.gr",
+            "provider_id": "NBG.gr",
+            "provider": "NBG",
+            "username": "User3",
+            "entitlements": {
+                "list": []
+            },
+            "createdByUserID": "0afa3358-3ae5-4f7e-984f-d930dd659c1d",
+            "application_id": "app3Id"
+        }
+    ],
+    "Consumer": null,
+    "Banks": [
+        {
+            "Accounts": [
+                {
+                    "Counterparties": [
+                        {
+                            "beneficiaryName": "My Counterparty",
+                            "created_by_user_id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "counterparty_id": "398aa6b8-1fd9-42bb-bdfb-cd99b915b8c1",
+                            "other_bank_routing_scheme": "BIC",
+                            "other_bank_routing_address": "ETHNGRAA",
+                            "other_branch_routing_scheme": "BranchID",
+                            "other_branch_routing_address": "aa2eef4a-6277-47e3-a918-a0e59afa6e78",
+                            "other_account_routing_scheme": "IBAN",
+                            "other_account_routing_address": "GR4501101030000010348012377",
+                            "is_beneficiary": true,
+                            "other_account_id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                            "CounterpartyMetadata": {
+                                "public_alias": {
+                                    "alias": "alias"
+                                },
+                                "private_alias": {
+                                    "alias": "privateAlias"
+                                },
+                                "more_info": {
+                                    "more_info": "moreInfo"
+                                },
+                                "URL": {
+                                    "URL": "https://www.nbg.gr/"
+                                },
+                                "image_URL": {
+                                    "image_URL": "https://www.nbg.gr/"
+                                },
+                                "open_corporates_URL": {
+                                    "open_corporates_URL": "https://www.nbg.gr/"
+                                },
+                                "corporate_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                },
+                                "physical_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "TransactionRequests": [
+                        {
+                            "TransactionAmount": null,
+                            "CounterpartyID": null,
+                            "extensions": null,
+                            "id": "21dba876-0a96-4929-b307-1fd396659603",
+                            "type": "COUNTERPARTY",
+                            "from": {
+                                "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                                "account_id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08"
+                            },
+                            "details": {
+                                "to": {
+                                    "card_id": null,
+                                    "account_id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                                    "beneficiaryName": null
+                                },
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": 10
+                                },
+                                "description": "Account Transfer"
+                            },
+                            "transaction_ids": [
+                                "44da9e8b-934e-469e-bec0-9c1251920dcd"
+                            ],
+                            "status": "COMPLETED",
+                            "start_date": "2018-12-01T18:27:28.7243978+02:00",
+                            "end_date": "2028-12-01T18:27:28.7243978+02:00",
+                            "challenge": null,
+                            "charge": {
+                                "summary": "OUR",
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": 0
+                                },
+                                "chargeExtensions": null
+                            }
+                        },
+                        {
+                            "TransactionAmount": null,
+                            "CounterpartyID": null,
+                            "extensions": null,
+                            "id": "f42c56c9-8a02-49f9-9e06-f7746dbdceee",
+                            "type": "card",
+                            "from": {
+                                "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                                "account_id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08"
+                            },
+                            "details": {
+                                "to": {
+                                    "card_id": "9500301c-7a21-4723-99c8-b9939e46742d",
+                                    "account_id": null,
+                                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                                    "beneficiaryName": null
+                                },
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": 10
+                                },
+                                "description": "Card Transfer"
+                            },
+                            "transaction_ids": [
+                                "e7c12ee0-cc36-40a9-8589-cc1f7e616d08"
+                            ],
+                            "status": "COMPLETED",
+                            "start_date": "2018-12-01T18:27:28.7243978+02:00",
+                            "end_date": "2028-12-01T18:27:28.7243978+02:00",
+                            "challenge": null,
+                            "charge": {
+                                "summary": "OUR",
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": 0
+                                },
+                                "chargeExtensions": null
+                            }
+                        }
+                    ],
+                    "Transactions": [
+                        {
+                            "id": "44da9e8b-934e-469e-bec0-9c1251920dcd",
+                            "this_account": {
+                                "id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                                "holders": [
+                                    {
+                                        "name": "User1",
+                                        "is_alias": false
+                                    }
+                                ],
+                                "number": "97226400154",
+                                "kind": "Current",
+                                "IBAN": "GR0901109720000097226400154",
+                                "swift_bic": "ETHNGRAA",
+                                "bank": {
+                                    "name": "NATIONAL BANK OF GREECE",
+                                    "national_identifier": "ETHNGRAA"
+                                }
+                            },
+                            "other_account": {
+                                "id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                                "holders": [
+                                    {
+                                        "name": "User2",
+                                        "is_alias": false
+                                    }
+                                ],
+                                "number": "10348012377",
+                                "kind": "Savings",
+                                "IBAN": "GR4501101030000010348012377",
+                                "swift_bic": "ETHNGRAA",
+                                "bank": {
+                                    "name": "NATIONAL BANK OF GREECE",
+                                    "national_identifier": "ETHNGRAA"
+                                }
+                            },
+                            "details": {
+                                "type": "Account Transfer",
+                                "description": "Transfer20EuroToUser2",
+                                "posted": "2018-11-30T18:27:28.7243978+02:00",
+                                "completed": "2018-11-30T18:27:28.7243978+02:00",
+                                "new_balance": {
+                                    "currency": "EUR",
+                                    "amount": "100000"
+                                },
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": "-20"
+                                }
+                            },
+                            "metadata": {
+                                "narrative": "narrative",
+                                "comments": [
+                                    {
+                                        "id": "a3850c3a-b251-4453-a8bc-ad725c11fce7",
+                                        "value": "sandboxComment",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                            "provider": "NBG",
+                                            "display_name": "User1"
+                                        }
+                                    }
+                                ],
+                                "tags": [
+                                    {
+                                        "id": "b9a08c8f-1867-4c59-b365-098aba611940",
+                                        "value": "1",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                            "provider": "NBG",
+                                            "display_name": "User1"
+                                        }
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "id": "415c82d9-3829-47c9-b934-80bb3a784c55",
+                                        "label": "label",
+                                        "URL": "https://www.nbg.gr/",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                            "provider": "NBG",
+                                            "display_name": "User1"
+                                        }
+                                    }
+                                ],
+                                "where": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.4587,
+                                    "date": "2018-12-01T18:27:28.7243978+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                    "label": "SandboxNBG",
+                    "number": "97226400154",
+                    "owners": [
+                        {
+                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "provider": "NBG",
+                            "display_name": "User1"
+                        }
+                    ],
+                    "type": "CURRENT",
+                    "value": {
+                        "currency": "EUR",
+                        "amount": "100000"
+                    },
+                    "IBAN": "GR0901109720000097226400154",
+                    "swift_bic": "ETHNGRAA",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "views_available": [
+                        {
+                            "is_public": false,
+                            "id": "owner",
+                            "short_name": "owner",
+                            "description": "owner view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": true,
+                            "can_add_comment": true,
+                            "can_add_corporate_location": true,
+                            "can_add_image": true,
+                            "can_add_image_url": true,
+                            "can_add_more_info": true,
+                            "can_add_open_corporates_url": true,
+                            "can_add_physical_location": true,
+                            "can_add_private_alias": true,
+                            "can_add_public_alias": true,
+                            "can_add_tag": true,
+                            "can_add_url": true,
+                            "can_add_counterparty": true,
+                            "can_add_where_tag": true,
+                            "can_add_narrative": true,
+                            "can_delete_comment": true,
+                            "can_delete_corporate_location": true,
+                            "can_delete_image": true,
+                            "can_delete_physical_location": true,
+                            "can_delete_tag": true,
+                            "can_delete_where_tag": true,
+                            "can_delete_narrative": true,
+                            "can_delete_image_url": true,
+                            "can_delete_public_alias": true,
+                            "can_delete_private_alias": true,
+                            "can_delete_more_info": true,
+                            "can_delete_open_corporates_url": true,
+                            "can_delete_url": true,
+                            "can_edit_owner_comment": true,
+                            "can_edit_where_tag": true,
+                            "can_edit_narrative": true,
+                            "can_edit_image_url": true,
+                            "can_edit_public_alias": true,
+                            "can_edit_private_alias": true,
+                            "can_edit_physical_location": true,
+                            "can_edit_corporate_location": true,
+                            "can_edit_more_info": true,
+                            "can_edit_open_corporates_url": true,
+                            "can_edit_url": true,
+                            "can_see_bank_account_balance": true,
+                            "can_see_bank_account_bank_name": true,
+                            "can_see_bank_account_currency": true,
+                            "can_see_bank_account_iban": true,
+                            "can_see_bank_account_label": true,
+                            "can_see_bank_account_national_identifier": true,
+                            "can_see_bank_account_number": true,
+                            "can_see_bank_account_owners": true,
+                            "can_see_bank_account_swift_bic": true,
+                            "can_see_bank_account_type": true,
+                            "can_see_comments": true,
+                            "can_see_narrative": true,
+                            "can_see_corporate_location": true,
+                            "can_see_image_url": true,
+                            "can_see_images": true,
+                            "can_see_more_info": true,
+                            "can_see_open_corporates_url": true,
+                            "can_see_other_account_bank_name": true,
+                            "can_see_other_account_iban": true,
+                            "can_see_other_account_kind": true,
+                            "can_see_other_account_metadata": true,
+                            "can_see_other_account_national_identifier": true,
+                            "can_see_other_account_number": true,
+                            "can_see_other_account_swift_bic": true,
+                            "can_see_owner_comment": true,
+                            "can_see_physical_location": true,
+                            "can_see_private_alias": true,
+                            "can_see_public_alias": true,
+                            "can_see_tags": true,
+                            "can_see_transaction_amount": true,
+                            "can_see_transaction_balance": true,
+                            "can_see_transaction_currency": true,
+                            "can_see_transaction_description": true,
+                            "can_see_transaction_finish_date": true,
+                            "can_see_transaction_metadata": true,
+                            "can_see_transaction_other_bank_account": true,
+                            "can_see_transaction_start_date": true,
+                            "can_see_transaction_this_bank_account": true,
+                            "can_see_transaction_type": true,
+                            "can_see_url": true,
+                            "can_see_where_tag": true,
+                            "can_see_bank_routing_scheme": true,
+                            "can_see_bank_routing_address": true,
+                            "can_see_bank_account_routing_scheme": true,
+                            "can_see_bank_account_routing_address": true,
+                            "can_see_other_bank_routing_scheme": true,
+                            "can_see_other_bank_routing_address": true,
+                            "can_see_other_account_routing_scheme": true,
+                            "can_see_other_account_routing_address": true
+                        },
+                        {
+                            "is_public": true,
+                            "id": "publicViewUser1",
+                            "short_name": "publicView",
+                            "description": "public view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": false,
+                            "can_add_comment": false,
+                            "can_add_corporate_location": false,
+                            "can_add_image": false,
+                            "can_add_image_url": false,
+                            "can_add_more_info": false,
+                            "can_add_open_corporates_url": false,
+                            "can_add_physical_location": false,
+                            "can_add_private_alias": false,
+                            "can_add_public_alias": false,
+                            "can_add_tag": false,
+                            "can_add_url": false,
+                            "can_add_counterparty": false,
+                            "can_add_where_tag": false,
+                            "can_add_narrative": false,
+                            "can_delete_comment": false,
+                            "can_delete_corporate_location": false,
+                            "can_delete_image": false,
+                            "can_delete_physical_location": false,
+                            "can_delete_tag": false,
+                            "can_delete_where_tag": false,
+                            "can_delete_narrative": false,
+                            "can_delete_image_url": false,
+                            "can_delete_public_alias": false,
+                            "can_delete_private_alias": false,
+                            "can_delete_more_info": false,
+                            "can_delete_open_corporates_url": false,
+                            "can_delete_url": false,
+                            "can_edit_owner_comment": false,
+                            "can_edit_where_tag": false,
+                            "can_edit_narrative": false,
+                            "can_edit_image_url": false,
+                            "can_edit_public_alias": false,
+                            "can_edit_private_alias": false,
+                            "can_edit_physical_location": false,
+                            "can_edit_corporate_location": false,
+                            "can_edit_more_info": false,
+                            "can_edit_open_corporates_url": false,
+                            "can_edit_url": false,
+                            "can_see_bank_account_balance": false,
+                            "can_see_bank_account_bank_name": false,
+                            "can_see_bank_account_currency": false,
+                            "can_see_bank_account_iban": false,
+                            "can_see_bank_account_label": false,
+                            "can_see_bank_account_national_identifier": false,
+                            "can_see_bank_account_number": false,
+                            "can_see_bank_account_owners": false,
+                            "can_see_bank_account_swift_bic": false,
+                            "can_see_bank_account_type": false,
+                            "can_see_comments": false,
+                            "can_see_narrative": false,
+                            "can_see_corporate_location": false,
+                            "can_see_image_url": false,
+                            "can_see_images": false,
+                            "can_see_more_info": false,
+                            "can_see_open_corporates_url": false,
+                            "can_see_other_account_bank_name": false,
+                            "can_see_other_account_iban": false,
+                            "can_see_other_account_kind": false,
+                            "can_see_other_account_metadata": false,
+                            "can_see_other_account_national_identifier": false,
+                            "can_see_other_account_number": false,
+                            "can_see_other_account_swift_bic": false,
+                            "can_see_owner_comment": false,
+                            "can_see_physical_location": false,
+                            "can_see_private_alias": false,
+                            "can_see_public_alias": false,
+                            "can_see_tags": false,
+                            "can_see_transaction_amount": false,
+                            "can_see_transaction_balance": false,
+                            "can_see_transaction_currency": false,
+                            "can_see_transaction_description": false,
+                            "can_see_transaction_finish_date": false,
+                            "can_see_transaction_metadata": false,
+                            "can_see_transaction_other_bank_account": false,
+                            "can_see_transaction_start_date": false,
+                            "can_see_transaction_this_bank_account": false,
+                            "can_see_transaction_type": false,
+                            "can_see_url": false,
+                            "can_see_where_tag": false,
+                            "can_see_bank_routing_scheme": false,
+                            "can_see_bank_routing_address": false,
+                            "can_see_bank_account_routing_scheme": false,
+                            "can_see_bank_account_routing_address": false,
+                            "can_see_other_bank_routing_scheme": false,
+                            "can_see_other_bank_routing_address": false,
+                            "can_see_other_account_routing_scheme": false,
+                            "can_see_other_account_routing_address": false
+                        }
+                    ],
+                    "account_routing": [
+                        {
+                            "scheme": "IBAN",
+                            "address": "GR0901109720000097226400154"
+                        },
+                        {
+                            "scheme": "AccountNumber",
+                            "address": "97226400154"
+                        }
+                    ]
+                },
+                {
+                    "Counterparties": [
+                        {
+                            "beneficiaryName": "Counterparty",
+                            "created_by_user_id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                            "counterparty_id": "e7cb7f3b-b6bc-4200-9480-af43a23a1b9b",
+                            "other_bank_routing_scheme": "BIC",
+                            "other_bank_routing_address": "ETHNGRAA",
+                            "other_branch_routing_scheme": "BranchID",
+                            "other_branch_routing_address": "be310557-ee20-4caa-bd9c-3de424cfd35c",
+                            "other_account_routing_scheme": "IBAN",
+                            "other_account_routing_address": "GR0901109720000097226400154",
+                            "is_beneficiary": true,
+                            "other_account_id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                            "CounterpartyMetadata": {
+                                "public_alias": {
+                                    "alias": "alias"
+                                },
+                                "private_alias": {
+                                    "alias": "privateAlias"
+                                },
+                                "more_info": {
+                                    "more_info": "moreInfo"
+                                },
+                                "URL": {
+                                    "URL": "https://www.nbg.gr/"
+                                },
+                                "image_URL": {
+                                    "image_URL": "https://www.nbg.gr/"
+                                },
+                                "open_corporates_URL": {
+                                    "open_corporates_URL": "https://www.nbg.gr/"
+                                },
+                                "corporate_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                                        "provider": "NBG",
+                                        "display_name": "User2"
+                                    }
+                                },
+                                "physical_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                                        "provider": "NBG",
+                                        "display_name": "User2"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "TransactionRequests": [
+                        {
+                            "TransactionAmount": null,
+                            "CounterpartyID": null,
+                            "extensions": null,
+                            "id": "3e5f6aca-ae0f-4b4f-ad52-d00254d453ae",
+                            "type": "SEPA",
+                            "from": {
+                                "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                                "account_id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b"
+                            },
+                            "details": {
+                                "to": {
+                                    "card_id": null,
+                                    "account_id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                                    "beneficiaryName": null
+                                },
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": 10
+                                },
+                                "description": "Account Transfer"
+                            },
+                            "transaction_ids": [
+                                "dd4b0d58-6f42-4d66-939f-634c004d03ba"
+                            ],
+                            "status": "COMPLETED",
+                            "start_date": "2018-12-01T18:27:28.7243978+02:00",
+                            "end_date": "2028-12-01T18:27:28.7243978+02:00",
+                            "challenge": null,
+                            "charge": {
+                                "summary": "OUR",
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": 0
+                                },
+                                "chargeExtensions": null
+                            }
+                        }
+                    ],
+                    "Transactions": [
+                        {
+                            "id": "dd4b0d58-6f42-4d66-939f-634c004d03ba",
+                            "this_account": {
+                                "id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                                "holders": [
+                                    {
+                                        "name": "User2",
+                                        "is_alias": false
+                                    }
+                                ],
+                                "number": "10348012377",
+                                "kind": "Savings",
+                                "IBAN": "GR4501101030000010348012377",
+                                "swift_bic": "ETHNGRAA",
+                                "bank": {
+                                    "name": "NATIONAL BANK OF GREECE",
+                                    "national_identifier": "ETHNGRAA"
+                                }
+                            },
+                            "other_account": {
+                                "id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                                "holders": [
+                                    {
+                                        "name": "User1",
+                                        "is_alias": false
+                                    }
+                                ],
+                                "number": "97226400154",
+                                "kind": "Current",
+                                "IBAN": "GR0901109720000097226400154",
+                                "swift_bic": "ETHNGRAA",
+                                "bank": {
+                                    "name": "NATIONAL BANK OF GREECE",
+                                    "national_identifier": "ETHNGRAA"
+                                }
+                            },
+                            "details": {
+                                "type": "Account Transfer",
+                                "description": "Account transfer",
+                                "posted": "2018-11-30T18:27:28.7243978+02:00",
+                                "completed": "2018-11-30T18:27:28.7243978+02:00",
+                                "new_balance": {
+                                    "currency": "EUR",
+                                    "amount": "100000"
+                                },
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": "50"
+                                }
+                            },
+                            "metadata": {
+                                "narrative": "",
+                                "comments": [
+                                    {
+                                        "id": "12784c04-f058-4ef4-b907-147734ac3bb2",
+                                        "value": "sandboxComment",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                                            "provider": "NBG",
+                                            "display_name": "User2"
+                                        }
+                                    }
+                                ],
+                                "tags": [
+                                    {
+                                        "id": "e89ccd7a-b045-4fe2-b18e-8487bea0419a",
+                                        "value": "2",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                                            "provider": "NBG",
+                                            "display_name": "User2"
+                                        }
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "id": "f27902b4-1bea-45fb-bfe8-2106884d07ae",
+                                        "label": "label",
+                                        "URL": "https://www.nbg.gr/",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                                            "provider": "NBG",
+                                            "display_name": "User2"
+                                        }
+                                    }
+                                ],
+                                "where": {
+                                    "latitude": 37.9838,
+                                    "longitude": 100,
+                                    "date": "2018-12-01T18:27:28.7243978+02:00",
+                                    "user": {
+                                        "id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                                        "provider": "NBG",
+                                        "display_name": "User2"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                    "label": "SandboxNBG",
+                    "number": "10348012377",
+                    "owners": [
+                        {
+                            "id": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                            "provider": "NBG",
+                            "display_name": "User2"
+                        }
+                    ],
+                    "type": "SAVINGS",
+                    "value": {
+                        "currency": "EUR",
+                        "amount": "100000"
+                    },
+                    "IBAN": "GR4501101030000010348012377",
+                    "swift_bic": "ETHNGRAA",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "views_available": [
+                        {
+                            "is_public": false,
+                            "id": "owner",
+                            "short_name": "owner",
+                            "description": "owner view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": true,
+                            "can_add_comment": true,
+                            "can_add_corporate_location": true,
+                            "can_add_image": true,
+                            "can_add_image_url": true,
+                            "can_add_more_info": true,
+                            "can_add_open_corporates_url": true,
+                            "can_add_physical_location": true,
+                            "can_add_private_alias": true,
+                            "can_add_public_alias": true,
+                            "can_add_tag": true,
+                            "can_add_url": true,
+                            "can_add_counterparty": true,
+                            "can_add_where_tag": true,
+                            "can_add_narrative": true,
+                            "can_delete_comment": true,
+                            "can_delete_corporate_location": true,
+                            "can_delete_image": true,
+                            "can_delete_physical_location": true,
+                            "can_delete_tag": true,
+                            "can_delete_where_tag": true,
+                            "can_delete_narrative": true,
+                            "can_delete_image_url": true,
+                            "can_delete_public_alias": true,
+                            "can_delete_private_alias": true,
+                            "can_delete_more_info": true,
+                            "can_delete_open_corporates_url": true,
+                            "can_delete_url": true,
+                            "can_edit_owner_comment": true,
+                            "can_edit_where_tag": true,
+                            "can_edit_narrative": true,
+                            "can_edit_image_url": true,
+                            "can_edit_public_alias": true,
+                            "can_edit_private_alias": true,
+                            "can_edit_physical_location": true,
+                            "can_edit_corporate_location": true,
+                            "can_edit_more_info": true,
+                            "can_edit_open_corporates_url": true,
+                            "can_edit_url": true,
+                            "can_see_bank_account_balance": true,
+                            "can_see_bank_account_bank_name": true,
+                            "can_see_bank_account_currency": true,
+                            "can_see_bank_account_iban": true,
+                            "can_see_bank_account_label": true,
+                            "can_see_bank_account_national_identifier": true,
+                            "can_see_bank_account_number": true,
+                            "can_see_bank_account_owners": true,
+                            "can_see_bank_account_swift_bic": true,
+                            "can_see_bank_account_type": true,
+                            "can_see_comments": true,
+                            "can_see_narrative": true,
+                            "can_see_corporate_location": true,
+                            "can_see_image_url": true,
+                            "can_see_images": true,
+                            "can_see_more_info": true,
+                            "can_see_open_corporates_url": true,
+                            "can_see_other_account_bank_name": true,
+                            "can_see_other_account_iban": true,
+                            "can_see_other_account_kind": true,
+                            "can_see_other_account_metadata": true,
+                            "can_see_other_account_national_identifier": true,
+                            "can_see_other_account_number": true,
+                            "can_see_other_account_swift_bic": true,
+                            "can_see_owner_comment": true,
+                            "can_see_physical_location": true,
+                            "can_see_private_alias": true,
+                            "can_see_public_alias": true,
+                            "can_see_tags": true,
+                            "can_see_transaction_amount": true,
+                            "can_see_transaction_balance": true,
+                            "can_see_transaction_currency": true,
+                            "can_see_transaction_description": true,
+                            "can_see_transaction_finish_date": true,
+                            "can_see_transaction_metadata": true,
+                            "can_see_transaction_other_bank_account": true,
+                            "can_see_transaction_start_date": true,
+                            "can_see_transaction_this_bank_account": true,
+                            "can_see_transaction_type": true,
+                            "can_see_url": true,
+                            "can_see_where_tag": true,
+                            "can_see_bank_routing_scheme": true,
+                            "can_see_bank_routing_address": true,
+                            "can_see_bank_account_routing_scheme": true,
+                            "can_see_bank_account_routing_address": true,
+                            "can_see_other_bank_routing_scheme": true,
+                            "can_see_other_bank_routing_address": true,
+                            "can_see_other_account_routing_scheme": true,
+                            "can_see_other_account_routing_address": true
+                        },
+                        {
+                            "is_public": true,
+                            "id": "publicViewUser2",
+                            "short_name": "publicView",
+                            "description": "public view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": false,
+                            "can_add_comment": false,
+                            "can_add_corporate_location": false,
+                            "can_add_image": false,
+                            "can_add_image_url": false,
+                            "can_add_more_info": false,
+                            "can_add_open_corporates_url": false,
+                            "can_add_physical_location": false,
+                            "can_add_private_alias": false,
+                            "can_add_public_alias": false,
+                            "can_add_tag": false,
+                            "can_add_url": false,
+                            "can_add_counterparty": false,
+                            "can_add_where_tag": false,
+                            "can_add_narrative": false,
+                            "can_delete_comment": false,
+                            "can_delete_corporate_location": false,
+                            "can_delete_image": false,
+                            "can_delete_physical_location": false,
+                            "can_delete_tag": false,
+                            "can_delete_where_tag": false,
+                            "can_delete_narrative": false,
+                            "can_delete_image_url": false,
+                            "can_delete_public_alias": false,
+                            "can_delete_private_alias": false,
+                            "can_delete_more_info": false,
+                            "can_delete_open_corporates_url": false,
+                            "can_delete_url": false,
+                            "can_edit_owner_comment": false,
+                            "can_edit_where_tag": false,
+                            "can_edit_narrative": false,
+                            "can_edit_image_url": false,
+                            "can_edit_public_alias": false,
+                            "can_edit_private_alias": false,
+                            "can_edit_physical_location": false,
+                            "can_edit_corporate_location": false,
+                            "can_edit_more_info": false,
+                            "can_edit_open_corporates_url": false,
+                            "can_edit_url": false,
+                            "can_see_bank_account_balance": false,
+                            "can_see_bank_account_bank_name": false,
+                            "can_see_bank_account_currency": false,
+                            "can_see_bank_account_iban": false,
+                            "can_see_bank_account_label": false,
+                            "can_see_bank_account_national_identifier": false,
+                            "can_see_bank_account_number": false,
+                            "can_see_bank_account_owners": false,
+                            "can_see_bank_account_swift_bic": false,
+                            "can_see_bank_account_type": false,
+                            "can_see_comments": false,
+                            "can_see_narrative": false,
+                            "can_see_corporate_location": false,
+                            "can_see_image_url": false,
+                            "can_see_images": false,
+                            "can_see_more_info": false,
+                            "can_see_open_corporates_url": false,
+                            "can_see_other_account_bank_name": false,
+                            "can_see_other_account_iban": false,
+                            "can_see_other_account_kind": false,
+                            "can_see_other_account_metadata": false,
+                            "can_see_other_account_national_identifier": false,
+                            "can_see_other_account_number": false,
+                            "can_see_other_account_swift_bic": false,
+                            "can_see_owner_comment": false,
+                            "can_see_physical_location": false,
+                            "can_see_private_alias": false,
+                            "can_see_public_alias": false,
+                            "can_see_tags": false,
+                            "can_see_transaction_amount": false,
+                            "can_see_transaction_balance": false,
+                            "can_see_transaction_currency": false,
+                            "can_see_transaction_description": false,
+                            "can_see_transaction_finish_date": false,
+                            "can_see_transaction_metadata": false,
+                            "can_see_transaction_other_bank_account": false,
+                            "can_see_transaction_start_date": false,
+                            "can_see_transaction_this_bank_account": false,
+                            "can_see_transaction_type": false,
+                            "can_see_url": false,
+                            "can_see_where_tag": false,
+                            "can_see_bank_routing_scheme": false,
+                            "can_see_bank_routing_address": false,
+                            "can_see_bank_account_routing_scheme": false,
+                            "can_see_bank_account_routing_address": false,
+                            "can_see_other_bank_routing_scheme": false,
+                            "can_see_other_bank_routing_address": false,
+                            "can_see_other_account_routing_scheme": false,
+                            "can_see_other_account_routing_address": false
+                        }
+                    ],
+                    "account_routing": [
+                        {
+                            "scheme": "IBAN",
+                            "address": "GR4501101030000010348012377"
+                        },
+                        {
+                            "scheme": "AccountNumber",
+                            "address": "10348012377"
+                        }
+                    ]
+                },
+                {
+                    "Counterparties": [
+                        {
+                            "beneficiaryName": "My Counterparty",
+                            "created_by_user_id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "counterparty_id": "cb3f7a36-0597-436e-97d2-ec38c87d7730",
+                            "other_bank_routing_scheme": "BIC",
+                            "other_bank_routing_address": "ETHNGRAA",
+                            "other_branch_routing_scheme": "BranchID",
+                            "other_branch_routing_address": "f7b22385-791d-4c25-9e63-2bc9e0b5604d",
+                            "other_account_routing_scheme": "IBAN",
+                            "other_account_routing_address": "GR4501101030000010348012377",
+                            "is_beneficiary": true,
+                            "other_account_id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                            "CounterpartyMetadata": {
+                                "public_alias": {
+                                    "alias": "alias"
+                                },
+                                "private_alias": {
+                                    "alias": "privateAlias"
+                                },
+                                "more_info": {
+                                    "more_info": "moreInfo"
+                                },
+                                "URL": {
+                                    "URL": "https://www.nbg.gr/"
+                                },
+                                "image_URL": {
+                                    "image_URL": "https://www.nbg.gr/"
+                                },
+                                "open_corporates_URL": {
+                                    "open_corporates_URL": "https://www.nbg.gr/"
+                                },
+                                "corporate_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                },
+                                "physical_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "TransactionRequests": [],
+                    "Transactions": [],
+                    "id": "6ee81f5a-121a-4578-9f07-34c93d930fb5",
+                    "label": "SandboxNBG2",
+                    "number": "97226400152",
+                    "owners": [
+                        {
+                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "provider": "NBG",
+                            "display_name": "User1"
+                        }
+                    ],
+                    "type": "CURRENT",
+                    "value": {
+                        "currency": "EUR",
+                        "amount": "100000"
+                    },
+                    "IBAN": "GR0901109720000097226400152",
+                    "swift_bic": "ETHNGRAA",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "views_available": [
+                        {
+                            "is_public": false,
+                            "id": "owner",
+                            "short_name": "owner",
+                            "description": "owner view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": true,
+                            "can_add_comment": true,
+                            "can_add_corporate_location": true,
+                            "can_add_image": true,
+                            "can_add_image_url": true,
+                            "can_add_more_info": true,
+                            "can_add_open_corporates_url": true,
+                            "can_add_physical_location": true,
+                            "can_add_private_alias": true,
+                            "can_add_public_alias": true,
+                            "can_add_tag": true,
+                            "can_add_url": true,
+                            "can_add_counterparty": true,
+                            "can_add_where_tag": true,
+                            "can_add_narrative": true,
+                            "can_delete_comment": true,
+                            "can_delete_corporate_location": true,
+                            "can_delete_image": true,
+                            "can_delete_physical_location": true,
+                            "can_delete_tag": true,
+                            "can_delete_where_tag": true,
+                            "can_delete_narrative": true,
+                            "can_delete_image_url": true,
+                            "can_delete_public_alias": true,
+                            "can_delete_private_alias": true,
+                            "can_delete_more_info": true,
+                            "can_delete_open_corporates_url": true,
+                            "can_delete_url": true,
+                            "can_edit_owner_comment": true,
+                            "can_edit_where_tag": true,
+                            "can_edit_narrative": true,
+                            "can_edit_image_url": true,
+                            "can_edit_public_alias": true,
+                            "can_edit_private_alias": true,
+                            "can_edit_physical_location": true,
+                            "can_edit_corporate_location": true,
+                            "can_edit_more_info": true,
+                            "can_edit_open_corporates_url": true,
+                            "can_edit_url": true,
+                            "can_see_bank_account_balance": true,
+                            "can_see_bank_account_bank_name": true,
+                            "can_see_bank_account_currency": true,
+                            "can_see_bank_account_iban": true,
+                            "can_see_bank_account_label": true,
+                            "can_see_bank_account_national_identifier": true,
+                            "can_see_bank_account_number": true,
+                            "can_see_bank_account_owners": true,
+                            "can_see_bank_account_swift_bic": true,
+                            "can_see_bank_account_type": true,
+                            "can_see_comments": true,
+                            "can_see_narrative": true,
+                            "can_see_corporate_location": true,
+                            "can_see_image_url": true,
+                            "can_see_images": true,
+                            "can_see_more_info": true,
+                            "can_see_open_corporates_url": true,
+                            "can_see_other_account_bank_name": true,
+                            "can_see_other_account_iban": true,
+                            "can_see_other_account_kind": true,
+                            "can_see_other_account_metadata": true,
+                            "can_see_other_account_national_identifier": true,
+                            "can_see_other_account_number": true,
+                            "can_see_other_account_swift_bic": true,
+                            "can_see_owner_comment": true,
+                            "can_see_physical_location": true,
+                            "can_see_private_alias": true,
+                            "can_see_public_alias": true,
+                            "can_see_tags": true,
+                            "can_see_transaction_amount": true,
+                            "can_see_transaction_balance": true,
+                            "can_see_transaction_currency": true,
+                            "can_see_transaction_description": true,
+                            "can_see_transaction_finish_date": true,
+                            "can_see_transaction_metadata": true,
+                            "can_see_transaction_other_bank_account": true,
+                            "can_see_transaction_start_date": true,
+                            "can_see_transaction_this_bank_account": true,
+                            "can_see_transaction_type": true,
+                            "can_see_url": true,
+                            "can_see_where_tag": true,
+                            "can_see_bank_routing_scheme": true,
+                            "can_see_bank_routing_address": true,
+                            "can_see_bank_account_routing_scheme": true,
+                            "can_see_bank_account_routing_address": true,
+                            "can_see_other_bank_routing_scheme": true,
+                            "can_see_other_bank_routing_address": true,
+                            "can_see_other_account_routing_scheme": true,
+                            "can_see_other_account_routing_address": true
+                        }
+                    ],
+                    "account_routing": [
+                        {
+                            "scheme": "IBAN",
+                            "address": "GR0901109720000097226400152"
+                        },
+                        {
+                            "scheme": "AccountNumber",
+                            "address": "97226400152"
+                        }
+                    ]
+                },
+                {
+                    "Counterparties": [
+                        {
+                            "beneficiaryName": "My Counterparty",
+                            "created_by_user_id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "counterparty_id": "b5c9ab19-04bc-4101-9122-3c0d8d2ca6c6",
+                            "other_bank_routing_scheme": "BIC",
+                            "other_bank_routing_address": "ETHNGRAA",
+                            "other_branch_routing_scheme": "BranchID",
+                            "other_branch_routing_address": "ad05dcf8-92e0-4e3c-af42-509eacadbc06",
+                            "other_account_routing_scheme": "IBAN",
+                            "other_account_routing_address": "GR4501101030000010348012377",
+                            "is_beneficiary": true,
+                            "other_account_id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                            "CounterpartyMetadata": {
+                                "public_alias": {
+                                    "alias": "alias"
+                                },
+                                "private_alias": {
+                                    "alias": "privateAlias"
+                                },
+                                "more_info": {
+                                    "more_info": "moreInfo"
+                                },
+                                "URL": {
+                                    "URL": "https://www.nbg.gr/"
+                                },
+                                "image_URL": {
+                                    "image_URL": "https://www.nbg.gr/"
+                                },
+                                "open_corporates_URL": {
+                                    "open_corporates_URL": "https://www.nbg.gr/"
+                                },
+                                "corporate_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                },
+                                "physical_location": {
+                                    "latitude": 37.9838,
+                                    "longitude": 23.7275,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "TransactionRequests": [],
+                    "Transactions": [
+                        {
+                            "id": "0b8ab29b-34de-4617-aa3e-92496fc00ea2",
+                            "this_account": {
+                                "id": "f2188a65-384a-40e2-bacd-47e6b1586cd6",
+                                "holders": [
+                                    {
+                                        "name": "User1",
+                                        "is_alias": false
+                                    }
+                                ],
+                                "number": "5278900029523359",
+                                "kind": "Credit Card",
+                                "IBAN": null,
+                                "swift_bic": "ETHNGRAA",
+                                "bank": {
+                                    "name": "NATIONAL BANK OF GREECE",
+                                    "national_identifier": "ETHNGRAA"
+                                }
+                            },
+                            "other_account": {
+                                "id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                                "holders": [
+                                    {
+                                        "name": "User1",
+                                        "is_alias": false
+                                    }
+                                ],
+                                "number": "97226400154",
+                                "kind": "Current",
+                                "IBAN": "GR0901109720000097226400154",
+                                "swift_bic": "ETHNGRAA",
+                                "bank": {
+                                    "name": "NATIONAL BANK OF GREECE",
+                                    "national_identifier": "ETHNGRAA"
+                                }
+                            },
+                            "details": {
+                                "type": "Account Transfer",
+                                "description": "CardToAccountTransfer",
+                                "posted": "2018-11-30T18:27:28.7243978+02:00",
+                                "completed": "2018-11-30T18:27:28.7243978+02:00",
+                                "new_balance": {
+                                    "currency": "EUR",
+                                    "amount": "100000"
+                                },
+                                "value": {
+                                    "currency": "EUR",
+                                    "amount": "10"
+                                }
+                            },
+                            "metadata": {
+                                "narrative": "",
+                                "comments": [
+                                    {
+                                        "id": "73b0fc31-301d-4429-995a-496dac9a5432",
+                                        "value": "sandboxComment",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                            "provider": "NBG",
+                                            "display_name": "User1"
+                                        }
+                                    }
+                                ],
+                                "tags": [
+                                    {
+                                        "id": "efe3e996-5359-421d-8ddc-42f9f8c1a5b9",
+                                        "value": "2",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                            "provider": "NBG",
+                                            "display_name": "User1"
+                                        }
+                                    }
+                                ],
+                                "images": [
+                                    {
+                                        "id": "9b6caf63-da95-4f10-b8d2-728ba025d7d8",
+                                        "label": "label",
+                                        "URL": "https://www.nbg.gr/",
+                                        "date": "2018-12-01T18:27:28.7243978+02:00",
+                                        "user": {
+                                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                            "provider": "NBG",
+                                            "display_name": "User1"
+                                        }
+                                    }
+                                ],
+                                "where": {
+                                    "latitude": 37.9838,
+                                    "longitude": 100,
+                                    "date": "2018-12-01T18:27:28.7243978+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "id": "f2188a65-384a-40e2-bacd-47e6b1586cd6",
+                    "label": "SandboxNBG3",
+                    "number": "5278900029523359",
+                    "owners": [
+                        {
+                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "provider": "NBG",
+                            "display_name": "User1"
+                        }
+                    ],
+                    "type": "CURRENT",
+                    "value": {
+                        "currency": "EUR",
+                        "amount": "100000"
+                    },
+                    "IBAN": null,
+                    "swift_bic": "ETHNGRAA",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "views_available": [
+                        {
+                            "is_public": false,
+                            "id": "owner",
+                            "short_name": "owner",
+                            "description": "owner view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": true,
+                            "can_add_comment": true,
+                            "can_add_corporate_location": true,
+                            "can_add_image": true,
+                            "can_add_image_url": true,
+                            "can_add_more_info": true,
+                            "can_add_open_corporates_url": true,
+                            "can_add_physical_location": true,
+                            "can_add_private_alias": true,
+                            "can_add_public_alias": true,
+                            "can_add_tag": true,
+                            "can_add_url": true,
+                            "can_add_counterparty": true,
+                            "can_add_where_tag": true,
+                            "can_add_narrative": true,
+                            "can_delete_comment": true,
+                            "can_delete_corporate_location": true,
+                            "can_delete_image": true,
+                            "can_delete_physical_location": true,
+                            "can_delete_tag": true,
+                            "can_delete_where_tag": true,
+                            "can_delete_narrative": true,
+                            "can_delete_image_url": true,
+                            "can_delete_public_alias": true,
+                            "can_delete_private_alias": true,
+                            "can_delete_more_info": true,
+                            "can_delete_open_corporates_url": true,
+                            "can_delete_url": true,
+                            "can_edit_owner_comment": true,
+                            "can_edit_where_tag": true,
+                            "can_edit_narrative": true,
+                            "can_edit_image_url": true,
+                            "can_edit_public_alias": true,
+                            "can_edit_private_alias": true,
+                            "can_edit_physical_location": true,
+                            "can_edit_corporate_location": true,
+                            "can_edit_more_info": true,
+                            "can_edit_open_corporates_url": true,
+                            "can_edit_url": true,
+                            "can_see_bank_account_balance": true,
+                            "can_see_bank_account_bank_name": true,
+                            "can_see_bank_account_currency": true,
+                            "can_see_bank_account_iban": true,
+                            "can_see_bank_account_label": true,
+                            "can_see_bank_account_national_identifier": true,
+                            "can_see_bank_account_number": true,
+                            "can_see_bank_account_owners": true,
+                            "can_see_bank_account_swift_bic": true,
+                            "can_see_bank_account_type": true,
+                            "can_see_comments": true,
+                            "can_see_narrative": true,
+                            "can_see_corporate_location": true,
+                            "can_see_image_url": true,
+                            "can_see_images": true,
+                            "can_see_more_info": true,
+                            "can_see_open_corporates_url": true,
+                            "can_see_other_account_bank_name": true,
+                            "can_see_other_account_iban": true,
+                            "can_see_other_account_kind": true,
+                            "can_see_other_account_metadata": true,
+                            "can_see_other_account_national_identifier": true,
+                            "can_see_other_account_number": true,
+                            "can_see_other_account_swift_bic": true,
+                            "can_see_owner_comment": true,
+                            "can_see_physical_location": true,
+                            "can_see_private_alias": true,
+                            "can_see_public_alias": true,
+                            "can_see_tags": true,
+                            "can_see_transaction_amount": true,
+                            "can_see_transaction_balance": true,
+                            "can_see_transaction_currency": true,
+                            "can_see_transaction_description": true,
+                            "can_see_transaction_finish_date": true,
+                            "can_see_transaction_metadata": true,
+                            "can_see_transaction_other_bank_account": true,
+                            "can_see_transaction_start_date": true,
+                            "can_see_transaction_this_bank_account": true,
+                            "can_see_transaction_type": true,
+                            "can_see_url": true,
+                            "can_see_where_tag": true,
+                            "can_see_bank_routing_scheme": true,
+                            "can_see_bank_routing_address": true,
+                            "can_see_bank_account_routing_scheme": true,
+                            "can_see_bank_account_routing_address": true,
+                            "can_see_other_bank_routing_scheme": true,
+                            "can_see_other_bank_routing_address": true,
+                            "can_see_other_account_routing_scheme": true,
+                            "can_see_other_account_routing_address": true
+                        }
+                    ],
+                    "account_routing": [
+                        {
+                            "scheme": "CardNumber",
+                            "address": "5278900029523359"
+                        }
+                    ]
+                }
+            ],
+            "Branches": [
+                {
+                    "id": "a1cb9247-10b4-42cf-b08a-8ce0d76a5833",
+                    "name": "AGIA",
+                    "address": {
+                        "line_1": "1, Agiokambou str.",
+                        "line_2": "AGIA",
+                        "line_3": "AGIA",
+                        "city": "AGIA",
+                        "state": "Attica",
+                        "postcode": "4003",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 39.71704,
+                        "longitude": 22.75463
+                    },
+                    "meta": {
+                        "license": null
+                    },
+                    "lobby": {
+                        "hours": "Monday to Thursday (08.00 - 14.30) - Friday (08.00 - 14.00)"
+                    },
+                    "drive_up": {
+                        "hours": "10"
+                    },
+                    "branch_routing": {
+                        "scheme": null,
+                        "address": null
+                    }
+                },
+                {
+                    "id": "3fb07909-46ec-4ef1-bf35-2c9b975323ff",
+                    "name": "NOMISMATOKOPIO METRO STATION",
+                    "address": {
+                        "line_1": "320, Messogion ave.",
+                        "line_2": "AGIA PARASKEVI",
+                        "line_3": "AGIA PARASKEVI",
+                        "city": "AGIA PARASKEVI",
+                        "state": "Attica",
+                        "postcode": "15341",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 38.009454,
+                        "longitude": 23.8067134
+                    },
+                    "meta": {
+                        "license": null
+                    },
+                    "lobby": {
+                        "hours": "Monday to Thursday (08.00 - 14.30) - Friday (08.00 - 14.00)"
+                    },
+                    "drive_up": {
+                        "hours": "10"
+                    },
+                    "branch_routing": {
+                        "scheme": null,
+                        "address": null
+                    }
+                }
+            ],
+            "Atms": [
+                {
+                    "id": "cfe67257-c49d-4347-b58d-9c27521f43c9",
+                    "name": "CENTRAL OFFICE (GEORGIOU STAVROU) BRANCH",
+                    "address": {
+                        "line_1": "GEORGIOU STAVROU STR, 102 32",
+                        "line_2": "ATHENS CENTER",
+                        "line_3": "ATHENS CENTER",
+                        "city": "ATHENS CENTER",
+                        "state": "Attica",
+                        "postcode": "10232",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 37.98183,
+                        "longitude": 23.72902
+                    },
+                    "meta": {
+                        "license": null
+                    }
+                },
+                {
+                    "id": "ce3c0799-bf88-4a7a-943f-22ccf08c38a9",
+                    "name": "CENTRAL OFFICE (AEOLOU) BRANCH",
+                    "address": {
+                        "line_1": "86, AEOLOU STR, 102 32",
+                        "line_2": "ATHENS CENTER",
+                        "line_3": "ATHENS CENTER",
+                        "city": "ATHENS CENTER",
+                        "state": "Attica",
+                        "postcode": "10232",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 39.71704,
+                        "longitude": 22.75463
+                    },
+                    "meta": {
+                        "license": null
+                    }
+                }
+            ],
+            "CrmEvents": [
+                {
+                    "id": "a1910b68-19a0-40e5-90ca-e8614ee427d5",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "customer_name": "User1",
+                    "customer_number": "1234567891",
+                    "category": "Meeting",
+                    "detail": "Meeting",
+                    "channel": "WEB",
+                    "scheduled_date": "2019-03-01T18:27:28.6931485+02:00",
+                    "actual_date": "2019-02-01T18:27:28.6931485+02:00",
+                    "result": "Completed"
+                }
+            ],
+            "Products": [
+                {
+                    "code": "ec58f909-f1e5-4107-bd5a-dfedfc31b61d",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "name": "Current Account",
+                    "category": "Retail",
+                    "family": "Current Accounts",
+                    "super_family": "Deposits",
+                    "more_info_url": "https://www.nbg.gr/en/retail/deposits/current-accounts/current-account",
+                    "details": "Current Account",
+                    "description": "Deposit account with chequebook and overdraft facility…",
+                    "meta": {
+                        "license": {
+                            "id": "b90bb02d-48f6-4ec7-984f-99ca5875825a",
+                            "name": "licence"
+                        }
+                    }
+                },
+                {
+                    "code": "50ac8e7d-2326-4fa9-b6e3-5b4be6435952",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "name": "Prepaid Cards",
+                    "category": "Retail",
+                    "family": "Prepaid Cards",
+                    "super_family": "Cards",
+                    "more_info_url": "https://www.nbg.gr/en/retail/cards#prepaid-cards",
+                    "details": "Prepaid Cards",
+                    "description": "Prepaid Cards",
+                    "meta": {
+                        "license": {
+                            "id": "feee3aec-4b33-45e6-b692-918925cf4bb5",
+                            "name": "licence"
+                        }
+                    }
+                }
+            ],
+            "TransactionTypes": [
+                {
+                    "id": {
+                        "value": "764ff9de-c38b-493b-902c-fc8a7dd37f31"
+                    },
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "short_code": "532f0299-a82e-4318-a8a8-8c1e018a9611",
+                    "summary": "SEPA",
+                    "description": "SEPA",
+                    "charge": {
+                        "currency": "EUR",
+                        "amount": "0"
+                    }
+                },
+                {
+                    "id": {
+                        "value": "07fabba6-d00d-4f00-9110-1a1f3d3785fa"
+                    },
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "short_code": "ec8e602d-a3a1-42c3-ba41-d1675811235a",
+                    "summary": "COUNTERPARTY",
+                    "description": "COUNTERPARTY",
+                    "charge": {
+                        "currency": "EUR",
+                        "amount": "0"
+                    }
+                },
+                {
+                    "id": {
+                        "value": "4f1c903f-1ee0-425c-9644-5fc962978459"
+                    },
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "short_code": "07b87d97-af29-49e5-8507-0f2e41541584",
+                    "summary": "CARD",
+                    "description": "CARD",
+                    "charge": {
+                        "currency": "EUR",
+                        "amount": "0"
+                    }
+                }
+            ],
+            "TransactionRequestTypes": [
+                {
+                    "BankID": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "TransactionRequestTypeID": "bd2e47a2-8241-433f-8c3c-7f13c600cf61",
+                    "body": {
+                        "value": "SEPA",
+                        "charge": {
+                            "summary": "SEPA Charge",
+                            "value": {
+                                "currency": "EUR",
+                                "amount": 0
+                            },
+                            "chargeExtensions": null
+                        }
+                    },
+                    "supported_challenge_types": [
+                        1
+                    ]
+                },
+                {
+                    "BankID": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "TransactionRequestTypeID": "30ce250e-7718-4a96-855c-4dd7736f14d5",
+                    "body": {
+                        "value": "COUNTERPARTY",
+                        "charge": {
+                            "summary": "COUNTERPARTY Charge",
+                            "value": {
+                                "currency": "EUR",
+                                "amount": 0
+                            },
+                            "chargeExtensions": null
+                        }
+                    },
+                    "supported_challenge_types": [
+                        1
+                    ]
+                },
+                {
+                    "BankID": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "TransactionRequestTypeID": "3ccb31c9-9e35-40a5-9992-44e89b16b1e1",
+                    "body": {
+                        "value": "card",
+                        "charge": {
+                            "summary": "CARD Charge",
+                            "value": {
+                                "currency": "EUR",
+                                "amount": 0
+                            },
+                            "chargeExtensions": null
+                        }
+                    },
+                    "supported_challenge_types": [
+                        1
+                    ]
+                }
+            ],
+            "Customers": [
+                {
+                    "CustomerMessages": [],
+                    "KycChecks": [],
+                    "KycDocuments": [],
+                    "KycMedias": [],
+                    "KycSocialMediaHandle": [],
+                    "KycStatuses": [],
+                    "UserID": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                    "customer_id": "c206736b-2d29-441f-8410-b3f0eff79a8f",
+                    "customer_number": "1234567891",
+                    "legal_name": "User1",
+                    "mobile_phone_number": "6980000000",
+                    "email": "user1@nbg.gr",
+                    "face_image": {
+                        "url": "https://www.nbg.gr/",
+                        "date": "2018-12-01T18:27:28.6931485+02:00"
+                    },
+                    "date_of_birth": "1991-12-01T18:27:28.6931485+02:00",
+                    "relationship_status": "Married",
+                    "dependants": 0,
+                    "dob_of_dependants": [],
+                    "credit_rating": {
+                        "rating": "10",
+                        "source": "Web"
+                    },
+                    "credit_limit": {
+                        "currency": "EUR",
+                        "amount": "300000"
+                    },
+                    "highest_education_attained": "Master",
+                    "employment_status": "Self-employed",
+                    "kyc_status": true,
+                    "last_ok_date": "2018-12-01T18:27:28.6931485+02:00"
+                },
+                {
+                    "CustomerMessages": [],
+                    "KycChecks": [],
+                    "KycDocuments": [],
+                    "KycMedias": [],
+                    "KycSocialMediaHandle": [],
+                    "KycStatuses": [],
+                    "UserID": "2ef15ffa-2eb0-48af-ac3b-1b5cac236f92",
+                    "customer_id": "ae1e7ef4-d494-40fb-bfa3-1e47e606343f",
+                    "customer_number": "9876543211",
+                    "legal_name": "User1",
+                    "mobile_phone_number": "6951111111",
+                    "email": "user1@nbg.gr",
+                    "face_image": {
+                        "url": "https://www.nbg.gr/",
+                        "date": "2018-12-01T18:27:28.6931485+02:00"
+                    },
+                    "date_of_birth": "1991-12-01T18:27:28.6931485+02:00",
+                    "relationship_status": "Married",
+                    "dependants": 0,
+                    "dob_of_dependants": [],
+                    "credit_rating": {
+                        "rating": "8",
+                        "source": "Web"
+                    },
+                    "credit_limit": {
+                        "currency": "EUR",
+                        "amount": "300000"
+                    },
+                    "highest_education_attained": "Master",
+                    "employment_status": "Contractor",
+                    "kyc_status": true,
+                    "last_ok_date": "2018-12-01T18:27:28.6931485+02:00"
+                },
+                {
+                    "CustomerMessages": [],
+                    "KycChecks": [],
+                    "KycDocuments": [],
+                    "KycMedias": [],
+                    "KycSocialMediaHandle": [],
+                    "KycStatuses": [],
+                    "UserID": "c2176132-cbae-43ac-bd3c-3bd14f3a8e5d",
+                    "customer_id": "444142cf-fb70-4d69-a0d6-f2ebf7ca1c83",
+                    "customer_number": "6549873211",
+                    "legal_name": "User1",
+                    "mobile_phone_number": "6982222222",
+                    "email": "user1@nbg.gr",
+                    "face_image": {
+                        "url": "https://www.nbg.gr/",
+                        "date": "2018-12-01T18:27:28.6931485+02:00"
+                    },
+                    "date_of_birth": "1991-12-01T18:27:28.6931485+02:00",
+                    "relationship_status": "Married",
+                    "dependants": 0,
+                    "dob_of_dependants": [],
+                    "credit_rating": {
+                        "rating": "7",
+                        "source": "Web"
+                    },
+                    "credit_limit": {
+                        "currency": "EUR",
+                        "amount": "300000"
+                    },
+                    "highest_education_attained": "Master",
+                    "employment_status": "Self-employed",
+                    "kyc_status": true,
+                    "last_ok_date": "2018-12-01T18:27:28.6931485+02:00"
+                }
+            ],
+            "Cards": [
+                {
+                    "cardExtensions": null,
+                    "cardId": "e078f989-556b-424b-8844-85a574ca28c3",
+                    "bank_card_number": "5278900029523359",
+                    "name_on_card": "User1",
+                    "issue_number": "52789000",
+                    "serial_number": "321123",
+                    "valid_from_date": "2018-12-01T18:27:28.7087743+02:00",
+                    "expires_date": "2028-12-01T18:27:28.7087743+02:00",
+                    "enabled": true,
+                    "cancelled": false,
+                    "on_hot_list": false,
+                    "technology": null,
+                    "networks": null,
+                    "allows": null,
+                    "replacement": null,
+                    "pin_reset": null,
+                    "collected": "2018-12-01T18:27:28.7087743+02:00",
+                    "posted": "2018-12-01T18:27:28.7087743+02:00",
+                    "account": {
+                        "id": "e7c12ee0-cc36-40a9-8589-cc1f7e616d08",
+                        "label": "SandboxNBG",
+                        "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                        "views_available": [
+                            {
+                                "is_public": false,
+                                "id": "owner",
+                                "short_name": "owner",
+                                "description": "owner view",
+                                "alias": "",
+                                "hide_metadata_if_alias_used": true,
+                                "can_add_comment": true,
+                                "can_add_corporate_location": true,
+                                "can_add_image": true,
+                                "can_add_image_url": true,
+                                "can_add_more_info": true,
+                                "can_add_open_corporates_url": true,
+                                "can_add_physical_location": true,
+                                "can_add_private_alias": true,
+                                "can_add_public_alias": true,
+                                "can_add_tag": true,
+                                "can_add_url": true,
+                                "can_add_counterparty": true,
+                                "can_add_where_tag": true,
+                                "can_add_narrative": true,
+                                "can_delete_comment": true,
+                                "can_delete_corporate_location": true,
+                                "can_delete_image": true,
+                                "can_delete_physical_location": true,
+                                "can_delete_tag": true,
+                                "can_delete_where_tag": true,
+                                "can_delete_narrative": true,
+                                "can_delete_image_url": true,
+                                "can_delete_public_alias": true,
+                                "can_delete_private_alias": true,
+                                "can_delete_more_info": true,
+                                "can_delete_open_corporates_url": true,
+                                "can_delete_url": true,
+                                "can_edit_owner_comment": true,
+                                "can_edit_where_tag": true,
+                                "can_edit_narrative": true,
+                                "can_edit_image_url": true,
+                                "can_edit_public_alias": true,
+                                "can_edit_private_alias": true,
+                                "can_edit_physical_location": true,
+                                "can_edit_corporate_location": true,
+                                "can_edit_more_info": true,
+                                "can_edit_open_corporates_url": true,
+                                "can_edit_url": true,
+                                "can_see_bank_account_balance": true,
+                                "can_see_bank_account_bank_name": true,
+                                "can_see_bank_account_currency": true,
+                                "can_see_bank_account_iban": true,
+                                "can_see_bank_account_label": true,
+                                "can_see_bank_account_national_identifier": true,
+                                "can_see_bank_account_number": true,
+                                "can_see_bank_account_owners": true,
+                                "can_see_bank_account_swift_bic": true,
+                                "can_see_bank_account_type": true,
+                                "can_see_comments": true,
+                                "can_see_narrative": true,
+                                "can_see_corporate_location": true,
+                                "can_see_image_url": true,
+                                "can_see_images": true,
+                                "can_see_more_info": true,
+                                "can_see_open_corporates_url": true,
+                                "can_see_other_account_bank_name": true,
+                                "can_see_other_account_iban": true,
+                                "can_see_other_account_kind": true,
+                                "can_see_other_account_metadata": true,
+                                "can_see_other_account_national_identifier": true,
+                                "can_see_other_account_number": true,
+                                "can_see_other_account_swift_bic": true,
+                                "can_see_owner_comment": true,
+                                "can_see_physical_location": true,
+                                "can_see_private_alias": true,
+                                "can_see_public_alias": true,
+                                "can_see_tags": true,
+                                "can_see_transaction_amount": true,
+                                "can_see_transaction_balance": true,
+                                "can_see_transaction_currency": true,
+                                "can_see_transaction_description": true,
+                                "can_see_transaction_finish_date": true,
+                                "can_see_transaction_metadata": true,
+                                "can_see_transaction_other_bank_account": true,
+                                "can_see_transaction_start_date": true,
+                                "can_see_transaction_this_bank_account": true,
+                                "can_see_transaction_type": true,
+                                "can_see_url": true,
+                                "can_see_where_tag": true,
+                                "can_see_bank_routing_scheme": true,
+                                "can_see_bank_routing_address": true,
+                                "can_see_bank_account_routing_scheme": true,
+                                "can_see_bank_account_routing_address": true,
+                                "can_see_other_bank_routing_scheme": true,
+                                "can_see_other_bank_routing_address": true,
+                                "can_see_other_account_routing_scheme": true,
+                                "can_see_other_account_routing_address": true
+                            },
+                            {
+                                "is_public": true,
+                                "id": "publicViewUser1",
+                                "short_name": "publicView",
+                                "description": "public view",
+                                "alias": "",
+                                "hide_metadata_if_alias_used": false,
+                                "can_add_comment": false,
+                                "can_add_corporate_location": false,
+                                "can_add_image": false,
+                                "can_add_image_url": false,
+                                "can_add_more_info": false,
+                                "can_add_open_corporates_url": false,
+                                "can_add_physical_location": false,
+                                "can_add_private_alias": false,
+                                "can_add_public_alias": false,
+                                "can_add_tag": false,
+                                "can_add_url": false,
+                                "can_add_counterparty": false,
+                                "can_add_where_tag": false,
+                                "can_add_narrative": false,
+                                "can_delete_comment": false,
+                                "can_delete_corporate_location": false,
+                                "can_delete_image": false,
+                                "can_delete_physical_location": false,
+                                "can_delete_tag": false,
+                                "can_delete_where_tag": false,
+                                "can_delete_narrative": false,
+                                "can_delete_image_url": false,
+                                "can_delete_public_alias": false,
+                                "can_delete_private_alias": false,
+                                "can_delete_more_info": false,
+                                "can_delete_open_corporates_url": false,
+                                "can_delete_url": false,
+                                "can_edit_owner_comment": false,
+                                "can_edit_where_tag": false,
+                                "can_edit_narrative": false,
+                                "can_edit_image_url": false,
+                                "can_edit_public_alias": false,
+                                "can_edit_private_alias": false,
+                                "can_edit_physical_location": false,
+                                "can_edit_corporate_location": false,
+                                "can_edit_more_info": false,
+                                "can_edit_open_corporates_url": false,
+                                "can_edit_url": false,
+                                "can_see_bank_account_balance": false,
+                                "can_see_bank_account_bank_name": false,
+                                "can_see_bank_account_currency": false,
+                                "can_see_bank_account_iban": false,
+                                "can_see_bank_account_label": false,
+                                "can_see_bank_account_national_identifier": false,
+                                "can_see_bank_account_number": false,
+                                "can_see_bank_account_owners": false,
+                                "can_see_bank_account_swift_bic": false,
+                                "can_see_bank_account_type": false,
+                                "can_see_comments": false,
+                                "can_see_narrative": false,
+                                "can_see_corporate_location": false,
+                                "can_see_image_url": false,
+                                "can_see_images": false,
+                                "can_see_more_info": false,
+                                "can_see_open_corporates_url": false,
+                                "can_see_other_account_bank_name": false,
+                                "can_see_other_account_iban": false,
+                                "can_see_other_account_kind": false,
+                                "can_see_other_account_metadata": false,
+                                "can_see_other_account_national_identifier": false,
+                                "can_see_other_account_number": false,
+                                "can_see_other_account_swift_bic": false,
+                                "can_see_owner_comment": false,
+                                "can_see_physical_location": false,
+                                "can_see_private_alias": false,
+                                "can_see_public_alias": false,
+                                "can_see_tags": false,
+                                "can_see_transaction_amount": false,
+                                "can_see_transaction_balance": false,
+                                "can_see_transaction_currency": false,
+                                "can_see_transaction_description": false,
+                                "can_see_transaction_finish_date": false,
+                                "can_see_transaction_metadata": false,
+                                "can_see_transaction_other_bank_account": false,
+                                "can_see_transaction_start_date": false,
+                                "can_see_transaction_this_bank_account": false,
+                                "can_see_transaction_type": false,
+                                "can_see_url": false,
+                                "can_see_where_tag": false,
+                                "can_see_bank_routing_scheme": false,
+                                "can_see_bank_routing_address": false,
+                                "can_see_bank_account_routing_scheme": false,
+                                "can_see_bank_account_routing_address": false,
+                                "can_see_other_bank_routing_scheme": false,
+                                "can_see_other_bank_routing_address": false,
+                                "can_see_other_account_routing_scheme": false,
+                                "can_see_other_account_routing_address": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "cardExtensions": null,
+                    "cardId": "9500301c-7a21-4723-99c8-b9939e46742d",
+                    "bank_card_number": "4917910017457593",
+                    "name_on_card": "User2",
+                    "issue_number": "49179100",
+                    "serial_number": "321124",
+                    "valid_from_date": "2018-12-01T18:27:28.7087743+02:00",
+                    "expires_date": "2028-12-01T18:27:28.7087743+02:00",
+                    "enabled": true,
+                    "cancelled": false,
+                    "on_hot_list": false,
+                    "technology": null,
+                    "networks": null,
+                    "allows": null,
+                    "replacement": null,
+                    "pin_reset": null,
+                    "collected": "2018-12-01T18:27:28.7087743+02:00",
+                    "posted": "2018-12-01T18:27:28.7087743+02:00",
+                    "account": {
+                        "id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                        "label": "SandboxNBG",
+                        "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                        "views_available": [
+                            {
+                                "is_public": false,
+                                "id": "owner",
+                                "short_name": "owner",
+                                "description": "owner view",
+                                "alias": "",
+                                "hide_metadata_if_alias_used": true,
+                                "can_add_comment": true,
+                                "can_add_corporate_location": true,
+                                "can_add_image": true,
+                                "can_add_image_url": true,
+                                "can_add_more_info": true,
+                                "can_add_open_corporates_url": true,
+                                "can_add_physical_location": true,
+                                "can_add_private_alias": true,
+                                "can_add_public_alias": true,
+                                "can_add_tag": true,
+                                "can_add_url": true,
+                                "can_add_counterparty": true,
+                                "can_add_where_tag": true,
+                                "can_add_narrative": true,
+                                "can_delete_comment": true,
+                                "can_delete_corporate_location": true,
+                                "can_delete_image": true,
+                                "can_delete_physical_location": true,
+                                "can_delete_tag": true,
+                                "can_delete_where_tag": true,
+                                "can_delete_narrative": true,
+                                "can_delete_image_url": true,
+                                "can_delete_public_alias": true,
+                                "can_delete_private_alias": true,
+                                "can_delete_more_info": true,
+                                "can_delete_open_corporates_url": true,
+                                "can_delete_url": true,
+                                "can_edit_owner_comment": true,
+                                "can_edit_where_tag": true,
+                                "can_edit_narrative": true,
+                                "can_edit_image_url": true,
+                                "can_edit_public_alias": true,
+                                "can_edit_private_alias": true,
+                                "can_edit_physical_location": true,
+                                "can_edit_corporate_location": true,
+                                "can_edit_more_info": true,
+                                "can_edit_open_corporates_url": true,
+                                "can_edit_url": true,
+                                "can_see_bank_account_balance": true,
+                                "can_see_bank_account_bank_name": true,
+                                "can_see_bank_account_currency": true,
+                                "can_see_bank_account_iban": true,
+                                "can_see_bank_account_label": true,
+                                "can_see_bank_account_national_identifier": true,
+                                "can_see_bank_account_number": true,
+                                "can_see_bank_account_owners": true,
+                                "can_see_bank_account_swift_bic": true,
+                                "can_see_bank_account_type": true,
+                                "can_see_comments": true,
+                                "can_see_narrative": true,
+                                "can_see_corporate_location": true,
+                                "can_see_image_url": true,
+                                "can_see_images": true,
+                                "can_see_more_info": true,
+                                "can_see_open_corporates_url": true,
+                                "can_see_other_account_bank_name": true,
+                                "can_see_other_account_iban": true,
+                                "can_see_other_account_kind": true,
+                                "can_see_other_account_metadata": true,
+                                "can_see_other_account_national_identifier": true,
+                                "can_see_other_account_number": true,
+                                "can_see_other_account_swift_bic": true,
+                                "can_see_owner_comment": true,
+                                "can_see_physical_location": true,
+                                "can_see_private_alias": true,
+                                "can_see_public_alias": true,
+                                "can_see_tags": true,
+                                "can_see_transaction_amount": true,
+                                "can_see_transaction_balance": true,
+                                "can_see_transaction_currency": true,
+                                "can_see_transaction_description": true,
+                                "can_see_transaction_finish_date": true,
+                                "can_see_transaction_metadata": true,
+                                "can_see_transaction_other_bank_account": true,
+                                "can_see_transaction_start_date": true,
+                                "can_see_transaction_this_bank_account": true,
+                                "can_see_transaction_type": true,
+                                "can_see_url": true,
+                                "can_see_where_tag": true,
+                                "can_see_bank_routing_scheme": true,
+                                "can_see_bank_routing_address": true,
+                                "can_see_bank_account_routing_scheme": true,
+                                "can_see_bank_account_routing_address": true,
+                                "can_see_other_bank_routing_scheme": true,
+                                "can_see_other_bank_routing_address": true,
+                                "can_see_other_account_routing_scheme": true,
+                                "can_see_other_account_routing_address": true
+                            },
+                            {
+                                "is_public": true,
+                                "id": "publicViewUser2",
+                                "short_name": "publicView",
+                                "description": "public view",
+                                "alias": "",
+                                "hide_metadata_if_alias_used": false,
+                                "can_add_comment": false,
+                                "can_add_corporate_location": false,
+                                "can_add_image": false,
+                                "can_add_image_url": false,
+                                "can_add_more_info": false,
+                                "can_add_open_corporates_url": false,
+                                "can_add_physical_location": false,
+                                "can_add_private_alias": false,
+                                "can_add_public_alias": false,
+                                "can_add_tag": false,
+                                "can_add_url": false,
+                                "can_add_counterparty": false,
+                                "can_add_where_tag": false,
+                                "can_add_narrative": false,
+                                "can_delete_comment": false,
+                                "can_delete_corporate_location": false,
+                                "can_delete_image": false,
+                                "can_delete_physical_location": false,
+                                "can_delete_tag": false,
+                                "can_delete_where_tag": false,
+                                "can_delete_narrative": false,
+                                "can_delete_image_url": false,
+                                "can_delete_public_alias": false,
+                                "can_delete_private_alias": false,
+                                "can_delete_more_info": false,
+                                "can_delete_open_corporates_url": false,
+                                "can_delete_url": false,
+                                "can_edit_owner_comment": false,
+                                "can_edit_where_tag": false,
+                                "can_edit_narrative": false,
+                                "can_edit_image_url": false,
+                                "can_edit_public_alias": false,
+                                "can_edit_private_alias": false,
+                                "can_edit_physical_location": false,
+                                "can_edit_corporate_location": false,
+                                "can_edit_more_info": false,
+                                "can_edit_open_corporates_url": false,
+                                "can_edit_url": false,
+                                "can_see_bank_account_balance": false,
+                                "can_see_bank_account_bank_name": false,
+                                "can_see_bank_account_currency": false,
+                                "can_see_bank_account_iban": false,
+                                "can_see_bank_account_label": false,
+                                "can_see_bank_account_national_identifier": false,
+                                "can_see_bank_account_number": false,
+                                "can_see_bank_account_owners": false,
+                                "can_see_bank_account_swift_bic": false,
+                                "can_see_bank_account_type": false,
+                                "can_see_comments": false,
+                                "can_see_narrative": false,
+                                "can_see_corporate_location": false,
+                                "can_see_image_url": false,
+                                "can_see_images": false,
+                                "can_see_more_info": false,
+                                "can_see_open_corporates_url": false,
+                                "can_see_other_account_bank_name": false,
+                                "can_see_other_account_iban": false,
+                                "can_see_other_account_kind": false,
+                                "can_see_other_account_metadata": false,
+                                "can_see_other_account_national_identifier": false,
+                                "can_see_other_account_number": false,
+                                "can_see_other_account_swift_bic": false,
+                                "can_see_owner_comment": false,
+                                "can_see_physical_location": false,
+                                "can_see_private_alias": false,
+                                "can_see_public_alias": false,
+                                "can_see_tags": false,
+                                "can_see_transaction_amount": false,
+                                "can_see_transaction_balance": false,
+                                "can_see_transaction_currency": false,
+                                "can_see_transaction_description": false,
+                                "can_see_transaction_finish_date": false,
+                                "can_see_transaction_metadata": false,
+                                "can_see_transaction_other_bank_account": false,
+                                "can_see_transaction_start_date": false,
+                                "can_see_transaction_this_bank_account": false,
+                                "can_see_transaction_type": false,
+                                "can_see_url": false,
+                                "can_see_where_tag": false,
+                                "can_see_bank_routing_scheme": false,
+                                "can_see_bank_routing_address": false,
+                                "can_see_bank_account_routing_scheme": false,
+                                "can_see_bank_account_routing_address": false,
+                                "can_see_other_bank_routing_scheme": false,
+                                "can_see_other_bank_routing_address": false,
+                                "can_see_other_account_routing_scheme": false,
+                                "can_see_other_account_routing_address": false
+                            }
+                        ]
+                    }
+                }
+            ],
+            "id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+            "full_name": "NATIONAL BANK OF GREECE",
+            "short_name": "NATIONAL BANK OF GREECE",
+            "logo_url": "https://www.nbg.gr/Style%20Library/images/logo.png?v=1",
+            "website_url": "https://www.nbg.gr/",
+            "swift_bic": "ETHNGRAA",
+            "national_identifier": "ETHNGRAA",
+            "bank_routing": {
+                "scheme": "BIC",
+                "address": "ETHNGRAA"
+            }
+        },
+        {
+            "Accounts": [
+                {
+                    "Counterparties": [
+                        {
+                            "beneficiaryName": "My Counterparty",
+                            "created_by_user_id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "counterparty_id": "c61dd50c-8411-4891-ab78-3bdeca81bec0",
+                            "other_bank_routing_scheme": "BIC",
+                            "other_bank_routing_address": "ETHNGRAA",
+                            "other_branch_routing_scheme": "BranchID",
+                            "other_branch_routing_address": "f719d383-9524-41cf-af3f-c82aaef99371",
+                            "other_account_routing_scheme": "IBAN",
+                            "other_account_routing_address": "GR4501101030000010348012377",
+                            "is_beneficiary": true,
+                            "other_account_id": "e8f85a59-9ce6-4d7f-9790-812ef44dd76b",
+                            "CounterpartyMetadata": {
+                                "public_alias": null,
+                                "private_alias": {
+                                    "alias": "privateAlias"
+                                },
+                                "more_info": {
+                                    "more_info": "moreInfo"
+                                },
+                                "URL": {
+                                    "URL": "https://www.eurobank.gr/"
+                                },
+                                "image_URL": {
+                                    "image_URL": "https://www.eurobank.gr/"
+                                },
+                                "open_corporates_URL": {
+                                    "open_corporates_URL": "https://www.eurobank.gr/"
+                                },
+                                "corporate_location": {
+                                    "latitude": 36.9737,
+                                    "longitude": 22.7174,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                },
+                                "physical_location": {
+                                    "latitude": 36.9737,
+                                    "longitude": 22.7174,
+                                    "date": "2018-12-01T18:27:28.7087743+02:00",
+                                    "user": {
+                                        "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                                        "provider": "NBG",
+                                        "display_name": "User1"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "TransactionRequests": [],
+                    "Transactions": [],
+                    "id": "57b27902-41ab-43bb-aba2-115ca3a6b45d",
+                    "label": "SandboxEFG",
+                    "number": "002600590000330100",
+                    "owners": [
+                        {
+                            "id": "8659cf58-fed9-4744-9086-5ca81d8ed9e9",
+                            "provider": "NBG",
+                            "display_name": "User1"
+                        }
+                    ],
+                    "type": "CURRENT",
+                    "value": {
+                        "currency": "EUR",
+                        "amount": "1000000"
+                    },
+                    "IBAN": "GR4502600590000330100431605",
+                    "swift_bic": "ERBKGRAA",
+                    "bank_id": "499F5629-3EE3-4D92-85E4-9B616077899A",
+                    "views_available": [
+                        {
+                            "is_public": false,
+                            "id": "owner",
+                            "short_name": "owner",
+                            "description": "owner view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": true,
+                            "can_add_comment": true,
+                            "can_add_corporate_location": true,
+                            "can_add_image": true,
+                            "can_add_image_url": true,
+                            "can_add_more_info": true,
+                            "can_add_open_corporates_url": true,
+                            "can_add_physical_location": true,
+                            "can_add_private_alias": true,
+                            "can_add_public_alias": true,
+                            "can_add_tag": true,
+                            "can_add_url": true,
+                            "can_add_counterparty": true,
+                            "can_add_where_tag": true,
+                            "can_add_narrative": true,
+                            "can_delete_comment": true,
+                            "can_delete_corporate_location": true,
+                            "can_delete_image": true,
+                            "can_delete_physical_location": true,
+                            "can_delete_tag": true,
+                            "can_delete_where_tag": true,
+                            "can_delete_narrative": true,
+                            "can_delete_image_url": true,
+                            "can_delete_public_alias": true,
+                            "can_delete_private_alias": true,
+                            "can_delete_more_info": true,
+                            "can_delete_open_corporates_url": true,
+                            "can_delete_url": true,
+                            "can_edit_owner_comment": true,
+                            "can_edit_where_tag": true,
+                            "can_edit_narrative": true,
+                            "can_edit_image_url": true,
+                            "can_edit_public_alias": true,
+                            "can_edit_private_alias": true,
+                            "can_edit_physical_location": true,
+                            "can_edit_corporate_location": true,
+                            "can_edit_more_info": true,
+                            "can_edit_open_corporates_url": true,
+                            "can_edit_url": true,
+                            "can_see_bank_account_balance": true,
+                            "can_see_bank_account_bank_name": true,
+                            "can_see_bank_account_currency": true,
+                            "can_see_bank_account_iban": true,
+                            "can_see_bank_account_label": true,
+                            "can_see_bank_account_national_identifier": true,
+                            "can_see_bank_account_number": true,
+                            "can_see_bank_account_owners": true,
+                            "can_see_bank_account_swift_bic": true,
+                            "can_see_bank_account_type": true,
+                            "can_see_comments": true,
+                            "can_see_narrative": true,
+                            "can_see_corporate_location": true,
+                            "can_see_image_url": true,
+                            "can_see_images": true,
+                            "can_see_more_info": true,
+                            "can_see_open_corporates_url": true,
+                            "can_see_other_account_bank_name": true,
+                            "can_see_other_account_iban": true,
+                            "can_see_other_account_kind": true,
+                            "can_see_other_account_metadata": true,
+                            "can_see_other_account_national_identifier": true,
+                            "can_see_other_account_number": true,
+                            "can_see_other_account_swift_bic": true,
+                            "can_see_owner_comment": true,
+                            "can_see_physical_location": true,
+                            "can_see_private_alias": true,
+                            "can_see_public_alias": true,
+                            "can_see_tags": true,
+                            "can_see_transaction_amount": true,
+                            "can_see_transaction_balance": true,
+                            "can_see_transaction_currency": true,
+                            "can_see_transaction_description": true,
+                            "can_see_transaction_finish_date": true,
+                            "can_see_transaction_metadata": true,
+                            "can_see_transaction_other_bank_account": true,
+                            "can_see_transaction_start_date": true,
+                            "can_see_transaction_this_bank_account": true,
+                            "can_see_transaction_type": true,
+                            "can_see_url": true,
+                            "can_see_where_tag": true,
+                            "can_see_bank_routing_scheme": true,
+                            "can_see_bank_routing_address": true,
+                            "can_see_bank_account_routing_scheme": true,
+                            "can_see_bank_account_routing_address": true,
+                            "can_see_other_bank_routing_scheme": true,
+                            "can_see_other_bank_routing_address": true,
+                            "can_see_other_account_routing_scheme": true,
+                            "can_see_other_account_routing_address": true
+                        },
+                        {
+                            "is_public": true,
+                            "id": "publicViewUser3",
+                            "short_name": "publicView",
+                            "description": "public view",
+                            "alias": "",
+                            "hide_metadata_if_alias_used": false,
+                            "can_add_comment": false,
+                            "can_add_corporate_location": false,
+                            "can_add_image": false,
+                            "can_add_image_url": false,
+                            "can_add_more_info": false,
+                            "can_add_open_corporates_url": false,
+                            "can_add_physical_location": false,
+                            "can_add_private_alias": false,
+                            "can_add_public_alias": false,
+                            "can_add_tag": false,
+                            "can_add_url": false,
+                            "can_add_counterparty": false,
+                            "can_add_where_tag": false,
+                            "can_add_narrative": false,
+                            "can_delete_comment": false,
+                            "can_delete_corporate_location": false,
+                            "can_delete_image": false,
+                            "can_delete_physical_location": false,
+                            "can_delete_tag": false,
+                            "can_delete_where_tag": false,
+                            "can_delete_narrative": false,
+                            "can_delete_image_url": false,
+                            "can_delete_public_alias": false,
+                            "can_delete_private_alias": false,
+                            "can_delete_more_info": false,
+                            "can_delete_open_corporates_url": false,
+                            "can_delete_url": false,
+                            "can_edit_owner_comment": false,
+                            "can_edit_where_tag": false,
+                            "can_edit_narrative": false,
+                            "can_edit_image_url": false,
+                            "can_edit_public_alias": false,
+                            "can_edit_private_alias": false,
+                            "can_edit_physical_location": false,
+                            "can_edit_corporate_location": false,
+                            "can_edit_more_info": false,
+                            "can_edit_open_corporates_url": false,
+                            "can_edit_url": false,
+                            "can_see_bank_account_balance": false,
+                            "can_see_bank_account_bank_name": false,
+                            "can_see_bank_account_currency": false,
+                            "can_see_bank_account_iban": false,
+                            "can_see_bank_account_label": false,
+                            "can_see_bank_account_national_identifier": false,
+                            "can_see_bank_account_number": false,
+                            "can_see_bank_account_owners": false,
+                            "can_see_bank_account_swift_bic": false,
+                            "can_see_bank_account_type": false,
+                            "can_see_comments": false,
+                            "can_see_narrative": false,
+                            "can_see_corporate_location": false,
+                            "can_see_image_url": false,
+                            "can_see_images": false,
+                            "can_see_more_info": false,
+                            "can_see_open_corporates_url": false,
+                            "can_see_other_account_bank_name": false,
+                            "can_see_other_account_iban": false,
+                            "can_see_other_account_kind": false,
+                            "can_see_other_account_metadata": false,
+                            "can_see_other_account_national_identifier": false,
+                            "can_see_other_account_number": false,
+                            "can_see_other_account_swift_bic": false,
+                            "can_see_owner_comment": false,
+                            "can_see_physical_location": false,
+                            "can_see_private_alias": false,
+                            "can_see_public_alias": false,
+                            "can_see_tags": false,
+                            "can_see_transaction_amount": false,
+                            "can_see_transaction_balance": false,
+                            "can_see_transaction_currency": false,
+                            "can_see_transaction_description": false,
+                            "can_see_transaction_finish_date": false,
+                            "can_see_transaction_metadata": false,
+                            "can_see_transaction_other_bank_account": false,
+                            "can_see_transaction_start_date": false,
+                            "can_see_transaction_this_bank_account": false,
+                            "can_see_transaction_type": false,
+                            "can_see_url": false,
+                            "can_see_where_tag": false,
+                            "can_see_bank_routing_scheme": false,
+                            "can_see_bank_routing_address": false,
+                            "can_see_bank_account_routing_scheme": false,
+                            "can_see_bank_account_routing_address": false,
+                            "can_see_other_bank_routing_scheme": false,
+                            "can_see_other_bank_routing_address": false,
+                            "can_see_other_account_routing_scheme": false,
+                            "can_see_other_account_routing_address": false
+                        }
+                    ],
+                    "account_routing": [
+                        {
+                            "scheme": "IBAN",
+                            "address": "GR4502600590000330100431605"
+                        },
+                        {
+                            "scheme": "AccountNumber",
+                            "address": "002600590000330100"
+                        }
+                    ]
+                }
+            ],
+            "Branches": [
+                {
+                    "id": "beba3935-d110-4b78-b9df-efdd2a2f63a6",
+                    "name": "Marousi Branch",
+                    "address": {
+                        "line_1": "kifisias 119",
+                        "line_2": "Marousi",
+                        "line_3": "Marousi",
+                        "city": "Marousi",
+                        "state": "Attica",
+                        "postcode": "15124",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 39.71704,
+                        "longitude": 22.75463
+                    },
+                    "meta": {
+                        "license": null
+                    },
+                    "lobby": {
+                        "hours": "Monday to Thursday (08.00 - 14.30) - Friday (08.00 - 14.00)"
+                    },
+                    "drive_up": {
+                        "hours": "10"
+                    },
+                    "branch_routing": {
+                        "scheme": null,
+                        "address": null
+                    }
+                },
+                {
+                    "id": "c88827bf-766d-4692-a2b6-a05ec009f759",
+                    "name": "Vrilissia Branch",
+                    "address": {
+                        "line_1": "Pentelis and Kiprou 52",
+                        "line_2": "Vrilissia",
+                        "line_3": "Vrilissia",
+                        "city": "Vrilissia",
+                        "state": "Attica",
+                        "postcode": "15235",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 38.009454,
+                        "longitude": 23.8067134
+                    },
+                    "meta": {
+                        "license": null
+                    },
+                    "lobby": {
+                        "hours": "Monday to Thursday (08.00 - 14.30) - Friday (08.00 - 14.00)"
+                    },
+                    "drive_up": {
+                        "hours": "10"
+                    },
+                    "branch_routing": {
+                        "scheme": null,
+                        "address": null
+                    }
+                }
+            ],
+            "Atms": [
+                {
+                    "id": "578c4ae8-a1c9-4067-baa9-992a3baf3078",
+                    "name": "CENTRAL OFFICE (GEORGIOU STAVROU) BRANCH",
+                    "address": {
+                        "line_1": "GEORGIOU STAVROU STR, 102 32",
+                        "line_2": "",
+                        "line_3": "",
+                        "city": "ATHENS CENTER",
+                        "state": "Attica",
+                        "postcode": "10232",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 37.98183,
+                        "longitude": 23.72902
+                    },
+                    "meta": {
+                        "license": null
+                    }
+                },
+                {
+                    "id": "cc576741-cec9-43ad-abc5-7dbf423f99d8",
+                    "name": "CENTRAL OFFICE (AEOLOU) BRANCH",
+                    "address": {
+                        "line_1": "86, AEOLOU STR, 102 32",
+                        "line_2": "",
+                        "line_3": "",
+                        "city": "ATHENS CENTER",
+                        "state": "Attica",
+                        "postcode": "10232",
+                        "country": "Greece"
+                    },
+                    "location": {
+                        "latitude": 39.71704,
+                        "longitude": 22.75463
+                    },
+                    "meta": {
+                        "license": null
+                    }
+                }
+            ],
+            "CrmEvents": [
+                {
+                    "id": "171f2331-f7a9-4e3b-b382-0519f52fd543",
+                    "bank_id": "DB173089-A8FE-43F1-8947-F1B2A8699829",
+                    "customer_name": "User1",
+                    "customer_number": "9137648251",
+                    "category": "Meeting",
+                    "detail": "Meeting",
+                    "channel": "WEB",
+                    "scheduled_date": "2019-03-01T18:27:28.6931485+02:00",
+                    "actual_date": "2019-02-01T18:27:28.6931485+02:00",
+                    "result": "Completed"
+                }
+            ],
+            "Products": [
+                {
+                    "code": "a9c4773b-9650-4131-b2f5-01871c78fd9e",
+                    "bank_id": "499F5629-3EE3-4D92-85E4-9B616077899A",
+                    "name": "Current Account",
+                    "category": "Retail",
+                    "family": "Current Accounts",
+                    "super_family": "Deposits",
+                    "more_info_url": "https://www.nbg.gr/en/retail/deposits/current-accounts/current-account",
+                    "details": "Current Account",
+                    "description": "Deposit account with chequebook and overdraft facility…",
+                    "meta": {
+                        "license": {
+                            "id": "387128b3-c437-41c4-af24-7a3075c3b7c6",
+                            "name": "licence"
+                        }
+                    }
+                },
+                {
+                    "code": "d3c79fad-27c7-4975-89d0-c0322b31ab71",
+                    "bank_id": "499F5629-3EE3-4D92-85E4-9B616077899A",
+                    "name": "Prepaid Cards",
+                    "category": "Retail",
+                    "family": "Prepaid Cards",
+                    "super_family": "Cards",
+                    "more_info_url": "https://www.nbg.gr/en/retail/cards#prepaid-cards",
+                    "details": "Prepaid Cards",
+                    "description": "Prepaid Cards",
+                    "meta": {
+                        "license": {
+                            "id": "88b681b7-8483-4f6f-9baf-27f7a6e1ec5c",
+                            "name": "licence"
+                        }
+                    }
+                }
+            ],
+            "TransactionTypes": [
+                {
+                    "id": {
+                        "value": "7bb07fe0-1947-40e4-af5e-8d37508410f0"
+                    },
+                    "bank_id": "499F5629-3EE3-4D92-85E4-9B616077899A",
+                    "short_code": "2eef3c1b-4635-432f-88d0-9a86d83ffb7f",
+                    "summary": "SEPA",
+                    "description": "SEPA",
+                    "charge": {
+                        "currency": "EUR",
+                        "amount": "0"
+                    }
+                },
+                {
+                    "id": {
+                        "value": "8adc96f7-83ac-4a4f-855d-bd4b1e838066"
+                    },
+                    "bank_id": "499F5629-3EE3-4D92-85E4-9B616077899A",
+                    "short_code": "6b064a6f-1692-4b36-b371-65546df34ce6",
+                    "summary": "COUNTERPARTY",
+                    "description": "COUNTERPARTY",
+                    "charge": {
+                        "currency": "EUR",
+                        "amount": "0"
+                    }
+                }
+            ],
+            "TransactionRequestTypes": [
+                {
+                    "BankID": "499F5629-3EE3-4D92-85E4-9B616077899A",
+                    "TransactionRequestTypeID": "54ff4a57-c66c-46d9-af14-04c590d28c5c",
+                    "body": {
+                        "value": "SEPA",
+                        "charge": {
+                            "summary": "SEPA Charge",
+                            "value": {
+                                "currency": "EUR",
+                                "amount": 0
+                            },
+                            "chargeExtensions": null
+                        }
+                    },
+                    "supported_challenge_types": [
+                        1
+                    ]
+                },
+                {
+                    "BankID": "499F5629-3EE3-4D92-85E4-9B616077899A",
+                    "TransactionRequestTypeID": "5fa8bf5b-8dfd-4220-abb0-47e95b0ffde7",
+                    "body": {
+                        "value": "COUNTERPARTY",
+                        "charge": {
+                            "summary": "COUNTERPARTY Charge",
+                            "value": {
+                                "currency": "EUR",
+                                "amount": 0
+                            },
+                            "chargeExtensions": null
+                        }
+                    },
+                    "supported_challenge_types": [
+                        1
+                    ]
+                }
+            ],
+            "Customers": null,
+            "Cards": null,
+            "id": "499F5629-3EE3-4D92-85E4-9B616077899A",
+            "full_name": "EUROBANK ERGASIAS S.A",
+            "short_name": "EUROBANK ERGASIAS S.A",
+            "logo_url": "https://www.eurobank.gr/online/home/images/logo1.gif",
+            "website_url": "https://www.eurobank.gr/",
+            "swift_bic": "ERBKGRAA",
+            "national_identifier": "ERBKGRAA",
+            "bank_routing": {
+                "scheme": "BIC",
+                "address": "ERBKGRAA"
+            }
+        }
+    ]
+}

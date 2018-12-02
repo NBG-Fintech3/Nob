@@ -24,21 +24,28 @@ export class UserInfo {
 @Injectable()
 export class ChatService {
 
-  constructor(private http: HttpClient,
-              private events: Events) {
+  messages;
+  index = 0;
+
+  constructor(private http: HttpClient, private events: Events) {
+    this.getMessageList().subscribe((data) => {
+      this.messages  = data;
+    })
   }
 
-  mockNewMessage(m) {
+  mockNewMessage() {
     const mockMessage: ChatMessage = {
       messageId: Date.now().toString(),
       userId: '210000198410281948',
       userName: 'Tzekas',
-      userAvatar: './assets/to-user.jpg',
+      userAvatar: './assets/user.jpg',
       toUserId: '140000198202211138',
       time: Date.now(),
-      message: m.message,
+      message: this.messages[this.index].message,
       status: 'success'
     };
+
+    this.index++;
 
     setTimeout(() => {
       this.events.publish('chat:received', mockMessage, Date.now())
@@ -48,12 +55,12 @@ export class ChatService {
   getMessageList(): Observable<ChatMessage[]> {
     const messageListUrl = './assets/mock/msg-list.json';
     return this.http.get<any>(messageListUrl)
-    .pipe(map(response => response.array));
+      .pipe(map(response => response.array));
   }
 
-  sendMessage(message: ChatMessage) {
-    return new Promise(resolve => setTimeout(() => resolve(message), Math.random() * 1000))
-    .then(() => this.mockNewMessage(message));
+  sendMessage() {
+    return new Promise(resolve => setTimeout(() => resolve(), Math.random() * 1000))
+      .then(() => this.mockNewMessage());
   }
 
   getUserInfo(): Promise<UserInfo> {

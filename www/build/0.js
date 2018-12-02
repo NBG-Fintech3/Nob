@@ -412,21 +412,27 @@ var UserInfo = /** @class */ (function () {
 
 var ChatService = /** @class */ (function () {
     function ChatService(http, events) {
+        var _this = this;
         this.http = http;
         this.events = events;
+        this.index = 0;
+        this.getMessageList().subscribe(function (data) {
+            _this.messages = data;
+        });
     }
-    ChatService.prototype.mockNewMessage = function (m) {
+    ChatService.prototype.mockNewMessage = function () {
         var _this = this;
         var mockMessage = {
             messageId: Date.now().toString(),
             userId: '210000198410281948',
             userName: 'Tzekas',
-            userAvatar: './assets/to-user.jpg',
+            userAvatar: './assets/user.jpg',
             toUserId: '140000198202211138',
             time: Date.now(),
-            message: m.message,
+            message: this.messages[this.index].message,
             status: 'success'
         };
+        this.index++;
         setTimeout(function () {
             _this.events.publish('chat:received', mockMessage, Date.now());
         }, Math.random() * 1800);
@@ -436,10 +442,10 @@ var ChatService = /** @class */ (function () {
         return this.http.get(messageListUrl)
             .pipe(Object(__WEBPACK_IMPORTED_MODULE_2_rxjs_operators_map__["map"])(function (response) { return response.array; }));
     };
-    ChatService.prototype.sendMessage = function (message) {
+    ChatService.prototype.sendMessage = function () {
         var _this = this;
-        return new Promise(function (resolve) { return setTimeout(function () { return resolve(message); }, Math.random() * 1000); })
-            .then(function () { return _this.mockNewMessage(message); });
+        return new Promise(function (resolve) { return setTimeout(function () { return resolve(); }, Math.random() * 1000); })
+            .then(function () { return _this.mockNewMessage(); });
     };
     ChatService.prototype.getUserInfo = function () {
         var userInfo = {
@@ -459,10 +465,9 @@ var ChatService = /** @class */ (function () {
     };
     ChatService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Events */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Events */]])
     ], ChatService);
     return ChatService;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=chat-service.js.map
@@ -541,14 +546,25 @@ var ChatPage = /** @class */ (function () {
      * @returns {Promise<ChatMessage[]>}
      */
     ChatPage.prototype.getMessage = function () {
-        var _this = this;
         // Get mock message list
-        return this.chatService
-            .getMessageList()
-            .subscribe(function (res) {
-            _this.messages = res;
-            _this.scrollToBottom();
-        });
+        this.messages = [
+            {
+                "messageId": "1",
+                "userId": "210000198410281948",
+                "userName": "George",
+                "userAvatar": "./assets/user.jpg",
+                "toUserId": 'x',
+                "time": 1491036720000,
+                "message": "Hey George, πως μπορώ να σε βοηθήσω ?",
+                "status": "success"
+            }
+        ];
+        // return this.chatService
+        //   .getMessageList()
+        //   .subscribe(res => {
+        //     this.messages = res;
+        //     this.scrollToBottom();
+        //   });
     };
     /**
      * @name sendMessage
@@ -570,15 +586,14 @@ var ChatPage = /** @class */ (function () {
             status: 'pending'
         };
         this.pushNewMessage(newMessage);
-        this.chatService.sendMessage(newMessage)
+        this.editorMessage = '';
+        this.chatService.sendMessage()
             .then(function () {
             var index = _this.getMessageIndexById(id);
-            if (index !== -1) {
+            if (index !== -1)
                 _this.messages[index].status = 'success';
-            }
         });
         //this.callWatson();
-        this.editorMessage = '';
     };
     /**
      * @name pushNewMessage
@@ -617,20 +632,21 @@ var ChatPage = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Content */]),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Content */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Content */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* Content */])
     ], ChatPage.prototype, "content", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('user_input'),
-        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _b || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
     ], ChatPage.prototype, "messageInput", void 0);
     ChatPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-chat',template:/*ion-inline-start:"/Users/danae/Nob/src/pages/chat/chat.html"*/'<ion-header>\n    <ion-navbar class="navbar">\n        <ion-grid>\n            <ion-row>\n              <ion-col col-10>\n                  <p class="subheader">Your virtual accountant</p>\n                  <h2 class="header">Here to help you</h2>\n              </ion-col>\n              <ion-col col-2 class="profile"><ion-icon name="person"></ion-icon></ion-col>\n            </ion-row>\n          </ion-grid>\n    </ion-navbar>\n</ion-header>\n  \n<ion-content>\n  \n    <ion-row justify-content-center>\n        <ion-buttons text-center>\n            <button ion-button round class="tag">Today</button>\n        </ion-buttons>\n   </ion-row>\n   <div class="conversation"> \n    <div *ngFor="let message of messages" class="message" \n         [class.left]=" message.userId === toUser.id"\n         [class.right]=" message.userId === user.id "> \n         <img *ngIf="message.userId === toUser.id" class="avatar" [src]="message.userAvatar" alt="" src="">\n         <ion-spinner name="dots" *ngIf="message.status === \'pending\'"></ion-spinner>\n         <div class="details">\n            <div class="content">\n              <p class="line-breaker ">{{message.message}}</p>\n            </div>\n         </div>\n    </div>\n   </div>\n</ion-content>\n\n <ion-footer no-border class="input-container" [style.height]="\'55px\'">\n  <div class="input">\n    <button ion-button clear icon-only item-right>\n      <ion-icon name="md-happy"></ion-icon>\n    </button>\n    <ion-textarea #user_input\n              placeholder="Press here to talk to Fitsy"\n              [(ngModel)]="editorMessage"\n              (keyup.enter)="sendMessage()"\n              (focusin)="onFocus()">\n    </ion-textarea>\n    <button ion-button clear icon-only item-right (click)="sendMessage()">\n      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>\n    </button>\n  </div>\n </ion-footer>\n\n\n'/*ion-inline-end:"/Users/danae/Nob/src/pages/chat/chat.html"*/,
+            selector: 'page-chat',template:/*ion-inline-start:"C:\Users\mr-gze\Documents\NobAssistant\IonicApp\Nob\src\pages\chat\chat.html"*/'<ion-header>\n\n    <ion-navbar class="navbar">\n\n        <ion-grid>\n\n            <ion-row>\n\n              <ion-col col-10>\n\n                  <p class="subheader">Your virtual accountant</p>\n\n                  <h2 class="header">Here to help you</h2>\n\n              </ion-col>\n\n              <ion-col col-2 class="profile"><ion-icon name="person"></ion-icon></ion-col>\n\n            </ion-row>\n\n          </ion-grid>\n\n    </ion-navbar>\n\n</ion-header>\n\n  \n\n<ion-content>\n\n  \n\n    <ion-row justify-content-center>\n\n        <ion-buttons text-center>\n\n            <button ion-button round class="tag">Today</button>\n\n        </ion-buttons>\n\n   </ion-row>\n\n   <div class="conversation"> \n\n    <div *ngFor="let message of messages" class="message" \n\n         [class.left]=" message.userId === toUser.id"\n\n         [class.right]=" message.userId === user.id "> \n\n         <img *ngIf="message.userId === toUser.id" class="avatar" [src]="message.userAvatar" alt="" src="">\n\n         <ion-spinner name="dots" *ngIf="message.status === \'pending\'"></ion-spinner>\n\n         <div class="details">\n\n            <div class="content">\n\n              <p class="line-breaker ">{{message.message}}</p>\n\n            </div>\n\n         </div>\n\n    </div>\n\n   </div>\n\n</ion-content>\n\n\n\n <ion-footer no-border class="input-container" [style.height]="\'55px\'">\n\n  <div class="input">\n\n    <button ion-button clear icon-only item-right>\n\n      <ion-icon name="md-happy"></ion-icon>\n\n    </button>\n\n    <ion-textarea #user_input\n\n              placeholder="Press here to talk to Fitsy"\n\n              [(ngModel)]="editorMessage"\n\n              (keyup.enter)="sendMessage()"\n\n              (focusin)="onFocus()">\n\n    </ion-textarea>\n\n    <button ion-button clear icon-only item-right (click)="sendMessage()">\n\n      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>\n\n    </button>\n\n  </div>\n\n </ion-footer>\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\mr-gze\Documents\NobAssistant\IonicApp\Nob\src\pages\chat\chat.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__providers_chat_service__["a" /* ChatService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_chat_service__["a" /* ChatService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Events */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Events */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__providers_watson_watson__["a" /* WatsonProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_watson_watson__["a" /* WatsonProvider */]) === "function" && _f || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_chat_service__["a" /* ChatService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Events */], __WEBPACK_IMPORTED_MODULE_3__providers_watson_watson__["a" /* WatsonProvider */]])
     ], ChatPage);
     return ChatPage;
-    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=chat.js.map

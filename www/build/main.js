@@ -34,7 +34,7 @@ var TabsPage = /** @class */ (function () {
     }
     TabsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-tabs',template:/*ion-inline-start:"/Users/danae/Nob/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="chatRoot"      tabIcon="card"></ion-tab> \n    <ion-tab [root]="overviewRoot"  tabIcon="book"></ion-tab>\n    <ion-tab [root]="scheduleRoot"  tabIcon="calendar"></ion-tab>\n    <ion-tab [root]="paymentsRoot"  tabIcon="card"></ion-tab>\n</ion-tabs>\n\n'/*ion-inline-end:"/Users/danae/Nob/src/pages/tabs/tabs.html"*/
+            selector: 'page-tabs',template:/*ion-inline-start:"C:\Users\mr-gze\Documents\NobAssistant\IonicApp\Nob\src\pages\tabs\tabs.html"*/'<ion-tabs>\n\n    <ion-tab [root]="chatRoot"      tabIcon="card"></ion-tab> \n\n    <ion-tab [root]="overviewRoot"  tabIcon="book"></ion-tab>\n\n    <ion-tab [root]="scheduleRoot"  tabIcon="calendar"></ion-tab>\n\n    <ion-tab [root]="paymentsRoot"  tabIcon="card"></ion-tab>\n\n</ion-tabs>\n\n\n\n'/*ion-inline-end:"C:\Users\mr-gze\Documents\NobAssistant\IonicApp\Nob\src\pages\tabs\tabs.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], TabsPage);
@@ -267,7 +267,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/danae/Nob/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/danae/Nob/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\mr-gze\Documents\NobAssistant\IonicApp\Nob\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\mr-gze\Documents\NobAssistant\IonicApp\Nob\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

@@ -16,7 +16,7 @@ export class ChatPage {
   @ViewChild('user_input') messageInput: ElementRef;
 
   messages: ChatMessage[] = [];
-  
+
   user: UserInfo;
   toUser: UserInfo;
   editorMessage = '';
@@ -74,12 +74,24 @@ export class ChatPage {
    */
   getMessage() {
     // Get mock message list
-    return this.chatService
-      .getMessageList()
-      .subscribe(res => {
-        this.messages = res;
-        this.scrollToBottom();
-      });
+    this.messages = [
+      {
+        "messageId": "1",
+        "userId": "210000198410281948",
+        "userName": "George",
+        "userAvatar": "./assets/user.jpg",
+        "toUserId": 'x',
+        "time": 1491036720000,
+        "message": "👋 Hey George, βγήκαν τα τέλη κυκλοφορίας!",
+        "status": "success"
+      }
+    ];
+    // return this.chatService
+    //   .getMessageList()
+    //   .subscribe(res => {
+    //     this.messages = res;
+    //     this.scrollToBottom();
+    //   });
   }
 
   /**
@@ -102,17 +114,16 @@ export class ChatPage {
     };
 
     this.pushNewMessage(newMessage);
+    this.editorMessage = '';
 
-    this.chatService.sendMessage(newMessage)
+    this.chatService.sendMessage()
       .then(() => {
         let index = this.getMessageIndexById(id);
-        if (index !== -1) {
+        if (index !== -1)
           this.messages[index].status = 'success';
-        }
       });
 
-      //this.callWatson();
-      this.editorMessage = '';
+    //this.callWatson();
   }
 
   /**
@@ -136,7 +147,7 @@ export class ChatPage {
     return this.messages.findIndex(e => e.messageId === id)
   }
 
-  
+
   scrollToBottom() {
     setTimeout(() => {
       if (this.content.scrollToBottom) {

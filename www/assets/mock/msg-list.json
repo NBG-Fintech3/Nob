@@ -1,89 +1,67 @@
 {
-  "array":[
+  "array": [
     {
-      "messageId":"1",
-      "userId":"140000198202211138",
-      "userName":"Luff",
-      "userImgUrl":"./assets/user.jpg",
-      "toUserId":"210000198410281948",
-      "toUserName":"Hancock",
-      "userAvatar":"./assets/to-user.jpg",
-      "time":1488349800000,
-      "message":"A good programmer is someone who always looks both ways before crossing a one-way street. ",
-      "status":"success"
-
+      "messageId": "1",
+      "userId": "210000198410281948",
+      "userImgUrl": "./assets/to-user.jpg",
+      "userAvatar": "./assets/user.jpg",
+      "time": 1491036720000,
+      "message": "Το deadline είναι μέχρι τις 📅 10 Ιανουαρίου. Εάν δεν τα εξοφλήσεις μέχρι τότε, το ποσό πληρωμής διπλασιάζεται 😮! Μπορείς να τα πληρώσεις με πιστωτική κάρτα της Εθνικής σε 10 δόσεις. Τι λες ? 👇🏽 https://www.nbg.gr/el/retail/cards/credit-cards/go-visa",
+      "status": "success"
     },
     {
-      "messageId":"2",
-      "userId":"210000198410281948",
-      "userName":"Hancock",
-      "userImgUrl":"./assets/to-user.jpg",
-      "toUserId":"140000198202211138",
-      "toUserName":"Luff",
-      "userAvatar":"./assets/user.jpg",
-      "time":1491034800000,
-      "message":"Don’t worry if it doesn't work right. If everything did, you’d be out of a job.",
-      "status":"success"
+      "messageId": "1",
+      "userId": "210000198410281948",
+      "userImgUrl": "./assets/to-user.jpg",
+      "userAvatar": "./assets/user.jpg",
+      "time": 1491036720000,
+      "message": "Θα ήθελες να στο υπενθυμίσω 📌 10 ημέρες πριν την λήξη της προθεσμίας ?",
+      "status": "success"
     },
     {
-      "messageId":"3",
-      "userId":"140000198202211138",
-      "userName":"Luff",
-      "userImgUrl":"./assets/user.jpg",
-      "toUserId":"210000198410281948",
-      "toUserName":"Hancock",
-      "userAvatar":"./assets/to-user.jpg",
-      "time":1491034920000,
-      "message":"Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris.",
-      "status":"success"
+      "messageId": "3",
+      "userId": "210000198410281948",
+      "userImgUrl": "./assets/to-user.jpg",
+      "userAvatar": "./assets/user.jpg",
+      "time": 1491036720000,
+      "message": "You got it, μπορείς να το τσεκάρεις στο ημερολόγιο σου όποια στιγμή θέλεις 📅.",
+      "status": "success"
     },
     {
-      "messageId":"4",
-      "userId":"210000198410281948",
-      "userName":"Hancock",
-      "userImgUrl":"./assets/to-user.jpg",
-      "toUserId":"140000198202211138",
-      "toUserName":"Luff",
-      "userAvatar":"./assets/user.jpg",
-      "time":1491036720000,
-      "message":"One man’s crappy software is another man’s full time job.",
-      "status":"success"
+      "messageId": "4",
+      "userId": "210000198410281948",
+      "userImgUrl": "./assets/to-user.jpg",
+      "userAvatar": "./assets/user.jpg",
+      "time": 1491036720000,
+      "message": "Έχεις 2 οφειλές αλλά το υπόλοιπο σου (€251.8)  δεν επαρκεί.",
+      "status": "success"
     },
     {
-      "messageId":"5",
-      "userId":"210000198410281948",
-      "userName":"Hancock",
-      "userImgUrl":"./assets/to-user.jpg",
-      "toUserId":"140000198202211138",
-      "toUserName":"Luff",
-      "userAvatar":"./assets/user.jpg",
-      "time":1491108720000,
-      "message":"Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.",
-      "status":"success"
+      "messageId": "5",
+      "userId": "210000198410281948",
+      "userImgUrl": "./assets/to-user.jpg",
+      "userAvatar": "./assets/user.jpg",
+      "time": 1491036720000,
+      "message": "Θα σου πρότεινα να πληρώσεις τον ΕΝΦΙΑ 🤦 ο οποίος έχει μεγαλύτερο πρόστιμο καθυστέρησης απ' ότι ο φόρος εισοδήματος.",
+      "status": "success"
     },
     {
-      "messageId":"6",
-      "userId":"140000198202211138",
-      "userName":"Luff",
-      "userImgUrl":"./assets/user.jpg",
-      "toUserId":"210000198410281948",
-      "toUserName":"Hancock",
-      "userAvatar":"./assets/to-user.jpg",
-      "time":1491231120000,
-      "message":"If at first you don’t succeed, call it version 1.0",
-      "status":"success"
+      "messageId": "6",
+      "userId": "210000198410281948",
+      "userImgUrl": "./assets/to-user.jpg",
+      "userAvatar": "./assets/user.jpg",
+      "time": 1491036720000,
+      "message": "Okay, η συναλλαγή πραγματοποιήθηκε επιτυχώς 💸. Το νέο υπόλοιπο του λογαριασμού σου είναι: €11.42.",
+      "status": "success"
     },
     {
-      "messageId":"7",
-      "userId":"140000198202211138",
-      "userName":"Luff",
-      "userImgUrl":"./assets/user.jpg",
-      "toUserId":"210000198410281948",
-      "toUserName":"Hancock",
-      "userAvatar":"./assets/to-user.jpg",
-      "time":1491231150000,
-      "message":"The <textarea> tag defines a multi-line text input control.\nA text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).\nThe size of a text area can be specified by the cols and rows attributes, or even better; through CSS' height and width properties.",
-      "status":"success"
+      "messageId": "7",
+      "userId": "210000198410281948",
+      "userImgUrl": "./assets/to-user.jpg",
+      "userAvatar": "./assets/user.jpg",
+      "time": 1491036720000,
+      "message": "Anytime ✌️",
+      "status": "success"
     }
   ]
 }
